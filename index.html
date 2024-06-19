@@ -18,6 +18,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;family=Play:wght@400;700&amp;display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
+    <!-- AOS JS -->
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
     <!-- All css here -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
@@ -143,8 +147,8 @@
             <!-- ======slider-area-start=========================================== -->
             <div id="home" class="slider-area">
                 <div class="single-slider slider-height extra-width position-relative">
-                    <div class="slider-bg-img position-absolute right-0 top-0 bottom-0 w-50 no-repeat bg-cover " data-background="images/slider/slider-img.jpg">
-                        <div class="slider-social-link position-absolute right-0 d-lg-none d-block">
+                    <div class="slider-bg-img position-absolute right-0 top-0 bottom-0 w-50 no-repeat bg-cover" data-background="images/slider/slider-img.jpg" data-aos="zoom-in" data-aos-duration="1500">
+                        <div class="slider-social-link position-absolute right-0 d-lg-none d-block" data-aos="zoom-in" data-aos-duration="1500">
                             <ul class="social pr-25">
                                 <li class="mt-10 mb-10 rotate-hover">
                                     <a class="text-white text-center d-inline-block rotate" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -223,9 +227,37 @@
                         <div class="row align-items-center slider-content-height">
                             <div class="col-xl-7 col-lg-8 col-md-12 col-sm-12 col-12 d-flex align-items-center">
                                 <div class="slider-wrapper position-relative">
-                                    <div class="slider-content text-center text-lg-left mt-45 position-relative z-index11">
+                                    <div class="slider-content text-center text-lg-left mt-45 position-relative z-index11" data-aos="zoom-in" data-aos-duration="2000">
                                         <h1 class="mb-30" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="800">Priyadarshi Mishra</h1>
-                                        <p data-aos="fade-right" data-aos-duration="2500" data-aos-delay="1000">Entrepreneur | Investor | CEO | Construction | Banking | On Demand Services</p><a href="#" class="btn position-relative over-hidden theme-bg text-white text-capitalize mt-35" data-aos="fade-up" data-aos-duration="1000">Say Hello</a></div>
+
+                                        <p id="animated-text" data-aos="fade-right" data-aos-duration="2500" data-aos-delay="1000">
+                                            Entrepreneur | Investor | CEO | Construction | Banking | On Demand Services
+                                        </p>
+                                        <script>
+                                            document.addEventListener('DOMContentLoaded', () => {
+                                                const words = [
+                                                    "Entrepreneur",
+                                                    "Investor",
+                                                    "CEO",
+                                                    "Construction",
+                                                    "Banking",
+                                                    "On Demand Services"
+                                                ];
+
+                                                let currentIndex = 0;
+                                                const textElement = document.getElementById('animated-text');
+
+                                                function updateText() {
+                                                    textElement.textContent = words[currentIndex];
+                                                    currentIndex = (currentIndex + 1) % words.length;
+                                                    setTimeout(updateText, 1000); // Change word every 1 seconds
+                                                }
+
+                                                updateText();
+                                            });
+                                        </script>
+                                        <a href="#" class="btn position-relative over-hidden theme-bg text-white text-capitalize mt-35" data-aos="fade-up" data-aos-duration="1000">Say Hello</a>
+                                    </div>
                                     <!-- /slider-content -->
                                     <div class="slider-content-shape shape shape-up-down-animation position-absolute"><img src="images/slider/shape/shape1.png" alt=""></div>
                                     <!-- /shape -->
@@ -238,12 +270,10 @@
                                 </div>
                                 <!-- /slider-wrapper -->
                             </div>
-
                         </div>
-
                     </div>
                     <!-- /container -->
-                    <div class="slider-social-link position-absolute right-0 d-none d-lg-block">
+                    <div class="slider-social-link position-absolute right-0 d-none d-lg-block" data-aos="zoom-in" data-aos-duration="1500">
                         <ul class="social pr-25">
                             <li class="mt-10 mb-10 rotate-hover"><a class="text-white text-center d-inline-block rotate" href="#"><i class="fab fa-facebook-f"></i></a></li>
                             <li class="mt-10 mb-10 rotate-hover"><a class="text-white text-center d-inline-block rotate" href="#"><i class="fab fa-twitter"></i></a></li>
@@ -256,98 +286,59 @@
                 </div>
                 <!-- /single-slider -->
             </div>
+
+            <!-- AOS JS -->
+            <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+            <script>
+                AOS.init({
+                    duration: 1200, // values from 0 to 3000, with step 50ms
+                });
+            </script>
+
+
             <!-- slider-area-end -->
             <!--======about-area-start===========================================-->
             <div id="about" class="about-area mt-170 mb-105">
-                <div class="about-content-wrapper position-relative">
+                <div class="about-content-wrapper position-relative" data-aos="zoom-in" data-aos-duration="1500">
                     <div class="container">
                         <div class="row">
-                            <!-- <div class="row flex-column-reverse flex-lg-row">-->
                             <div class="col-xl-6 col-lg-6 col-md-12 offset-md-0 col-sm-11 offset-sm-1 col-12">
                                 <div class="about-img-wrapper position-relative mb-100">
-                                    <div class="about-img position-relative z-index11" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="300">
+                                    <div class="about-img position-relative z-index11" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="300">
                                         <div class="about-img-over over-hidden transition5 d-inline-block position-relative"><img class="border-radius12 tilt" src="images/about/about-img.jpg" alt=""></div>
                                     </div>
-                                    <!-- /about-img -->
-                                    <div class="about-color-shape-bg theme-bg position-absolute tilt" data-aos="fade-right" data-aos-duration="2500"></div>
-                                    <div class="about-color-shape-bg secondary-bg position-absolute z-index-1 tilt" data-aos="fade-right" data-aos-duration="2600"></div>
+                                    <div class="about-color-shape-bg theme-bg position-absolute tilt" data-aos="zoom-in" data-aos-duration="2500"></div>
+                                    <div class="about-color-shape-bg secondary-bg position-absolute z-index-1 tilt" data-aos="zoom-in" data-aos-duration="2600"></div>
                                 </div>
-                                <!-- /about-img-wrapper -->
                             </div>
-
-                            <div class="col-xl-6 col-lg-6  col-md-12 col-sm-12 col-12">
-                                <div class="about-content position-relative mb-50">
+                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                <div class="about-content position-relative mb-50" data-aos="zoom-in" data-aos-duration="2000">
                                     <div class="position-relative">
                                         <div class="title"><span class="theme-color f-700 d-block mb-6 mt--5">About Me</span>
-                                            <h3 class="f-700 mb-30">Entrepreneur | Investor | CEO | Construction | Banking | On Demand Services</h3>
+                                            <h3 class="f-700 mb-30">Entrepreneur </h3>
                                         </div>
-                                        <!-- /title -->
                                         <div class="skill-shape shape shape-up-down-animation position-absolute"><img src="images/slider/shape/shape2.png" alt=""></div>
-                                        <!-- /skill-shape -->
                                     </div>
                                     <p class="mb-25">IIM Kozhikode Graduate | Strategy & Management | </p>
                                     <p>Construction & Architecture Specialist From humble beginnings to reaching great heights, my journey embodies the spirit of perseverance. With a specialized focus on strategy, management, construction, and architecture,
                                         I bring a wealth of expertise to every endeavor. I believe in evolving alongside my team, working collaboratively to achieve remarkable success. Let's connect and make a lasting impact together.</p>
-                                    <!-- <div class="about-info-wrapper pt-10">
-                                        <div class="row">
-                                            <div class="col-xl-6  col-lg-12  col-md-6  col-sm-12 col-12">
-                                                <ul class="about-info">
-                                                    <li class="d-inline-block pr-45">
-                                                        <p class="primary-color f-700 mb-6">Name</p>
-                                                        <p class="primary-color f-700 mb-6">Age</p>
-                                                        <p class="primary-color f-700 mb-6">Occupation</p>
-                                                        <p class="primary-color f-700 mb-6">Education</p>
-                                                    </li>
-
-                                                    <li class="d-inline-block">
-                                                        <p class="mb-6">James Smith</p>
-                                                        <p class="mb-6">29 Years</p>
-                                                        <p class="mb-6">System Engineer</p>
-                                                        <p class="mb-6">PhD in Physics</p>
-                                                    </li>
-
-                                                </ul>
-                                            </div>
-
-                                            <div class="col-xl-6  col-lg-12  col-md-6  col-sm-12 col-12">
-                                                <ul class="about-info">
-                                                    <li class="d-inline-block pr-45">
-                                                        <p class="primary-color f-700 mb-6">Phone</p>
-                                                        <p class="primary-color f-700 mb-6">Email</p>
-                                                        <p class="primary-color f-700 mb-6">Nationality</p>
-                                                        <p class="primary-color f-700 mb-6">Freelance</p>
-                                                    </li>
-
-                                                    <li class="d-inline-block">
-                                                        <p class="mb-6">+123 456 7890</p>
-                                                        <p class="mb-6">hello@hibro.com</p>
-                                                        <p class="mb-6">Bangladeshi</p>
-                                                        <p class="mb-6">Available</p>
-                                                    </li>
-
-                                                </ul>
-                                            </div>
-
-                                        </div>
-
-                                    </div> -->
-                                    <!-- /about-info-wrapper -->
-                                    <!-- <div class="signature mt-20"><img src="images/about/signature.png" alt=""></div> -->
                                 </div>
-                                <!-- /about-content -->
                             </div>
-
                         </div>
-
                     </div>
-                    <!-- /container -->
-                    <div class="about-yellow-shadow position-absolute right-0 z-index-1"><img src="images/slider/shape/about-yellow-shadow.png" alt=""></div>
-                    <!-- /yellow-shadow -->
-                    <div class="about-blue-shadow position-absolute right-0 z-index-1"><img src="images/slider/shape/about-blue-shadow.png" alt=""></div>
-                    <!-- /blue-shadow -->
+                    <div class="about-yellow-shadow position-absolute right-0 z-index-1" data-aos="zoom-in" data-aos-duration="1500"><img src="images/slider/shape/about-yellow-shadow.png" alt=""></div>
+                    <div class="about-blue-shadow position-absolute right-0 z-index-1" data-aos="zoom-in" data-aos-duration="1500"><img src="images/slider/shape/about-blue-shadow.png" alt=""></div>
                 </div>
-                <!-- /about-wrapper -->
             </div>
+
+            <!-- AOS JS -->
+            <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+            <script>
+                AOS.init({
+                    duration: 1200, // values from 0 to 3000, with step 50ms
+                });
+            </script>
+
             <!-- about-area-end -->
             <!--======fun-fact-area-start===========================================-->
             <div class="fun-fact-area fun-fact-bg over-hidden pt-105 pb-80" data-aos="fade-up" data-aos-duration="1800">
@@ -916,28 +907,28 @@
             </div>
             <!-- portfolio-area-end -->
             <!--======award-area-start===========================================-->
-            <div class="award-area secondary-bg over-hidden position-relative z-index11 pt-150 pb-170">
+            <div class="award-area secondary-bg over-hidden position-relative z-index11 pt-150 pb-170" data-aos="zoom-in" data-aos-duration="1500">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-12 col-lg-12  col-md-12  col-sm-12 col-12">
-                            <div class="title text-center mb-65"><span class="theme-color f-700 d-block mb-6">Success Stories</span>
-                                <h3 class="mb-20">Awards & Achivements</h3>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="title text-center mb-65" data-aos="zoom-in" data-aos-duration="1500">
+                                <span class="theme-color f-700 d-block mb-6">Success Stories</span>
+                                <h3 class="mb-20">Awards & Achievements</h3>
                             </div>
                             <!-- /title -->
                         </div>
-
                     </div>
 
                     <div class="award-wrapper mt-60">
-                        <div class="row align-items-start theme-border-top award-margin pt-40 pb-35">
-                            <div class="col-xl-2  col-lg-2  col-md-2  col-sm-11 col-12">
+                        <div class="row align-items-start theme-border-top award-margin pt-40 pb-35" data-aos="zoom-in" data-aos-duration="1500">
+                            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-11 col-12">
                                 <div class="award-logo mt-10 mb-20">
                                     <a href="#" class="d-block"><img src="images/award/award-logo1.png" alt=""></a>
                                 </div>
                                 <!-- /award-logo -->
                             </div>
 
-                            <div class="col-xl-3  col-lg-3  col-md-3  col-sm-11 col-12">
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-11 col-12">
                                 <div class="award-content">
                                     <h5 class="mb-1">Best Developer Award</h5>
                                     <p>2022</p>
@@ -945,33 +936,31 @@
                                 <!-- /award-content -->
                             </div>
 
-                            <div class="col-xl-3  col-lg-3  col-md-3  col-sm-11 col-12">
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-11 col-12">
                                 <div class="award-content">
                                     <h5 class="mb-1">Developer Association</h5>
-                                    <p>New York, Usa
-                                    </p>
+                                    <p>New York, USA</p>
                                 </div>
                                 <!-- /award-content -->
                             </div>
 
-                            <div class="col-xl-4  col-lg-4  col-md-4  col-sm-11 col-12">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-11 col-12">
                                 <div class="award-content">
                                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolore.</p>
                                 </div>
                                 <!-- /award-content -->
                             </div>
-
                         </div>
 
-                        <div class="row align-items-start theme-border-top award-margin pt-40 pb-35">
-                            <div class="col-xl-2  col-lg-2  col-md-2  col-sm-11 col-12">
+                        <div class="row align-items-start theme-border-top award-margin pt-40 pb-35" data-aos="zoom-in" data-aos-duration="1500">
+                            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-11 col-12">
                                 <div class="award-logo mt-10 mb-20">
                                     <a href="#" class="d-block"><img src="images/award/award-logo2.png" alt=""></a>
                                 </div>
                                 <!-- /award-logo -->
                             </div>
 
-                            <div class="col-xl-3  col-lg-3  col-md-3  col-sm-11 col-12">
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-11 col-12">
                                 <div class="award-content">
                                     <h5 class="mb-1">Developer of the Year</h5>
                                     <p>2021</p>
@@ -979,33 +968,31 @@
                                 <!-- /award-content -->
                             </div>
 
-                            <div class="col-xl-3  col-lg-3  col-md-3  col-sm-11 col-12">
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-11 col-12">
                                 <div class="award-content">
-                                    <h5 class="mb-1">Dev Internatioal</h5>
-                                    <p>London, England
-                                    </p>
+                                    <h5 class="mb-1">Dev International</h5>
+                                    <p>London, England</p>
                                 </div>
                                 <!-- /award-content -->
                             </div>
 
-                            <div class="col-xl-4  col-lg-4  col-md-4  col-sm-11 col-12">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-11 col-12">
                                 <div class="award-content">
                                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolore.</p>
                                 </div>
                                 <!-- /award-content -->
                             </div>
-
                         </div>
 
-                        <div class="row align-items-start theme-border-top theme-border-bottom award-margin pt-40 pb-35">
-                            <div class="col-xl-2  col-lg-2  col-md-2  col-sm-11 col-12">
+                        <div class="row align-items-start theme-border-top theme-border-bottom award-margin pt-40 pb-35" data-aos="zoom-in" data-aos-duration="1500">
+                            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-11 col-12">
                                 <div class="award-logo mt-10 mb-20">
                                     <a href="#" class="d-block"><img src="images/award/award-logo3.png" alt=""></a>
                                 </div>
                                 <!-- /award-logo -->
                             </div>
 
-                            <div class="col-xl-3  col-lg-3  col-md-3  col-sm-11 col-12">
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-11 col-12">
                                 <div class="award-content">
                                     <h5 class="mb-1">Fastest Coder</h5>
                                     <p>2019</p>
@@ -1013,29 +1000,34 @@
                                 <!-- /award-content -->
                             </div>
 
-                            <div class="col-xl-3  col-lg-3  col-md-3  col-sm-11 col-12">
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-11 col-12">
                                 <div class="award-content">
                                     <h5 class="mb-1">Amazing Programmer</h5>
-                                    <p>Dhaka, Bangladesh
-                                    </p>
+                                    <p>Dhaka, Bangladesh</p>
                                 </div>
                                 <!-- /award-content -->
                             </div>
 
-                            <div class="col-xl-4  col-lg-4  col-md-4  col-sm-11 col-12">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-11 col-12">
                                 <div class="award-content">
                                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolore.</p>
                                 </div>
                                 <!-- /award-content -->
                             </div>
-
                         </div>
-
                     </div>
                     <!-- /award-wrapper -->
                 </div>
                 <!-- /container -->
             </div>
+
+            <!-- AOS JS -->
+            <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+            <script>
+                AOS.init({
+                    duration: 1200, // values from 0 to 3000, with step 50ms
+                });
+            </script>
             <!-- /award-area -->
             <!-- award-area-end -->
             <!--======experience-area-start===========================================-->
