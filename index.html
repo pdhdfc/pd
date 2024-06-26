@@ -125,8 +125,8 @@
             height: 100%;
             overflow-x: hidden;
             padding-top: 0px;
-            background: rgb(252, 254, 254);
-            background: radial-gradient(circle, rgba(252, 254, 254, 1) 0%, rgba(228, 228, 228, 0) 99%);
+            background: rgb(248, 252, 253);
+            background: radial-gradient(circle, rgba(248, 252, 253, 1) 0%, rgba(228, 228, 228, 0) 99%);
             transition: transform 0.3s ease;
             z-index: 1000;
             /* Ensure the drawer is above other content */
@@ -262,7 +262,31 @@
                 <!-- ======slider-area-start=========================================== -->
                 <div id="home" class="slider-area">
                     <div class="single-slider slider-height extra-width position-relative">
-                        <div class="slider-bg-img position-absolute right-0 top-0 bottom-0 w-50 no-repeat bg-cover" data-background="images/slider/slider-img.jpg" data-aos="zoom-in" data-aos-duration="1500">
+                        <style>
+                            /* Default styles */
+                            
+                            .slider-bg-img {
+                                /* Your default background image for larger screens */
+                                background-image: url('images/slider/slider-img.jpg');
+                                background-size: cover;
+                                /* Add any other default styles */
+                            }
+                            /* Media query for mobile devices */
+                            
+                            @media only screen and (max-width: 768px) {
+                                .slider-bg-img {
+                                    /* Different background image for mobile */
+                                    background-image: url('https://edtimes.in/wp-content/uploads/2021/08/Priyadarshi-Mishra-Founder-and-CEO-Design-and-Construct.jpeg');
+                                    /* Adjust other properties as needed */
+                                    width: 100%;
+                                    height: 200px;
+                                    background-position: center;
+                                    /* Add any other styles specific to mobile */
+                                }
+                            }
+                        </style>
+
+                        <div class="slider-bg-img position-absolute right-0 top-0 bottom-0 w-50 no-repeat bg-cover" data-aos="zoom-in" data-aos-duration="1500">
                             <div class="slider-social-link position-absolute right-0 d-lg-none d-block" data-aos="zoom-in" data-aos-duration="1500">
                                 <ul class="social pr-25">
                                     <li class="mt-10 mb-10 rotate-hover">
@@ -348,7 +372,10 @@
                                             <!-- <p id="animated-text" data-aos="fade-right" data-aos-duration="2500" data-aos-delay="1000">
                                                 Entrepreneur | Investor | CEO | Construction | Banking | On Demand Services
                                             </p> -->
-                                            <script>
+                                            <p id="animated-text" data-aos="fade-right" data-aos-duration="2500" data-aos-delay="1000">
+                                                Entrepreneur
+                                            </p>
+                                            <!-- <script>
                                                 document.addEventListener('DOMContentLoaded', () => {
                                                     const words = [
                                                         "Entrepreneur",
@@ -369,7 +396,7 @@
                                                     }
 
                                                     updateText();
-                                                });
+                                                }); -->
                                             </script>
                                             <!-- <a href="#" class="btn position-relative over-hidden theme-bg text-white text-capitalize mt-35" data-aos="fade-up" data-aos-duration="1000">Say Hello</a> -->
                                         </div>
