@@ -1,333 +1,182 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background-color: #003580;
+        color: white;
+    }
+    
+    .main-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .site-logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    .navigation {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .navigation a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .main-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 60px);
+        padding: 20px;
+        margin-bottom: -7%;
+    }
+    
+    .image-container {
+        width: 700px;
+        height: 700px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    
+    .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .text-content {
+        margin-left: 40px;
+    }
+    
+    .sidebar-content {
+        margin-right: 40px;
+    }
+    
+    .text-content h2 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    .text-content p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    
+    .fixed-sidebar {
+        width: 200px;
+        padding: 20px;
+        height: 100vh;
+        position: fixed;
+        top: 40%;
+        left: 10%;
+        font-style: italic;
+        font-weight: bold;
+    }
+    
+    .fixed-sidebar ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .fixed-sidebar li {
+        margin-bottom: 10px;
+    }
+    
+    .fixed-sidebar a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+    }
+    
+    .content-main {
+        margin-left: 240px;
+        flex-grow: 1;
+    }
+    
+    .entrepreneur-section {
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        margin-right: 15%;
+    }
+    
+    .sidebar-content,
+    .about-section {
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 50%;
+        background-color: #ff0000;
+        color: white;
+        margin: 20px;
+    }
+    
+    .site-logo img {
+        width: 150px;
+    }
+</style>
 
+<header>
+    <div class="main-container">
+        <div class="site-logo">
+            <img src="images/logo/logo.svg" alt="Priyadarshi Mishar Logo">
+        </div>
 
-<!-- Mirrored from ethemestudio.com/demo/thames/5_home_modern/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 18 Jun 2024 06:07:30 GMT -->
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>PD Mishra</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Place favicon.ico in the root directory -->
-    <link rel="shortcut icon" href="images/logo/favicon-16x16.png" type="image/x-icon">
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;family=Play:wght@400;700&amp;display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
-    <!-- AOS JS -->
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-
-    <!-- All css here -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/leaflet.css">
-    <link rel="stylesheet" href="css/meanmenu.css">
-    <link rel="stylesheet" href="css/default.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-
-
-
-</head>
-
-<body>
-    <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-    <!--  ====== preloader=============================================  -->
-    <div id="preloader">
-        <div id="loading">
-            <div id="loading-center">
-                <div id="loading-center-absolute">
-                    <div class="object" id="object_one"></div>
-                    <div class="object" id="object_two"></div>
-                    <div class="object" id="object_three"></div>
-                </div>
-            </div>
+    </div>
+</header>
+<div class="fixed-sidebar">
+    <ul>
+        <li><a href="#" class="st">01 Home</a></li>
+        <li><a href="#" class="st">02 Recognitions</a></li>
+        <li><a href="#" class="st">03 About</a></li>
+        <li><a href="#" class="st">04 Media Mentions</a></li>
+        <li><a href="#" class="st">05 Speaking Sessions</a></li>
+        <li><a href="#" class="st">06 Social Presence</a></li>
+    </ul>
+</div>
+<main class="content-main">
+    <div class="main-content">
+        <div class="image-container">
+            <img src="https://edtimes.in/wp-content/uploads/2021/08/Priyadarshi-Mishra-Founder-and-CEO-Design-and-Construct.jpeg" alt="Profile Picture">
+        </div>
+        <div class="text-content">
+            <h2>Founder & CEO</h2>
+            <p>All In one Hospitality Group</p>
         </div>
     </div>
-    <!-- /preloader -->
+    <div class="entrepreneur-section">
+        <p id="animated-text" data-aos="fade-right" data-aos-duration="2500" data-aos-delay="1000">
+            Entrepreneur | Investor | CEO | Construction | Banking | On Demand Services
+        </p>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const words = [
+                    "Entrepreneur",
+                    "Investor",
+                    "CEO",
+                    "Construction",
+                    "Banking",
+                    "On Demand Services"
+                ];
 
-    <!--  ====== header-area-start=======================================  -->
-    <header>
-        <div id="header-sticky" class="transparent-header header-area">
-            <div class="header">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-5">
-                            <div class="logo mt-50 mb-50 transition5">
-                                <a class="d-block" href="index.html"><img src="images/logo/logo.svg" alt="HIBRO"></a>
-                            </div>
-                        </div>
+                let currentIndex = 0;
+                const textElement = document.getElementById('animated-text');
 
-                        <div class="col-xl-10 col-lg-10 col-md-9 col-sm-8 col-7 d-flex justify-content-end">
-                            <div class="main-menu">
-                                <nav id="mobile-menu">
-                                    <ul class="d-block">
-                                        <li>
-                                            <a class="active" href="index.html">Home</a>
-                                        </li>
-                                        <li>
-                                            <a href="#about">About</a>
-                                        </li>
+                function updateText() {
+                    textElement.textContent = words[currentIndex];
+                    currentIndex = (currentIndex + 1) % words.length;
+                    setTimeout(updateText, 1000); // Change word every 1 seconds
+                }
 
-                                        <li>
-                                            <a href="media.html">Media</a>
-                                        </li>
-                                        <li>
-                                            <a href="events.html">Events</a>
-                                        </li>
-                                        <li>
-                                            <a href="#blog">Blog</a>
-                                        </li>
-                                        <li>
-                                            <a href="#contact">contact</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <!-- /main-menu -->
-                            <div class="d-block d-lg-none ml-30">
-                                <a class="mobile-menubar theme-color primary-hover" href="javascript:void(0);"><i class="far fa-bars"></i></a>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-                <!-- /container -->
-            </div>
-        </div>
-        <!-- /header-bottom -->
-    </header>
-    <!--  header-area-end  -->
-    <style>
-        .containerrt {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-        }
-        
-        .grid {
-            display: grid;
-            gap: 20px;
-            width: 100%;
-            max-width: 1200px;
-        }
-        /* One column layout for small devices */
-        
-        @media (max-width: 600px) {
-            .grid {
-                grid-template-columns: 1fr;
-            }
-        }
-        /* Two column layout for medium devices */
-        
-        @media (min-width: 601px) and (max-width: 900px) {
-            .grid {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-        /* Three column layout for large devices */
-        
-        @media (min-width: 901px) {
-            .grid {
-                grid-template-columns: 1fr 1fr 1fr;
-            }
-        }
-        
-        .media-mention-card {
-            background-color: #ffffff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 16px;
-            transition: transform 0.3s ease-in-out;
-            min-height: 250px;
-        }
-        
-        .media-mention-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .media-mention-card img {
-            width: 80px;
-            height: 80px;
-            object-fit: contain;
-            margin-bottom: 16px;
-        }
-        
-        .mention-text {
-            flex-grow: 1;
-            font-size: 16px;
-            color: #333;
-            line-height: 1.6;
-            text-align: center;
-            margin-bottom: 16px;
-        }
-        
-        .read-more-button {
-            padding: 8px 16px;
-            background-color: #007bff;
-            color: #fff;
-            text-align: center;
-            text-decoration: none;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        
-        .read-more-button:hover {
-            background-color: #0056b3;
-        }
-        
-        .med {
-            margin: 20px 0;
-            font-size: 24px;
-            color: #333;
-            text-align: center;
-            margin-top: 7%;
-        }
-    </style>
-
-    <main>
-        <div class="containerrt">
-            <h4 class="med">Media</h4>
-            <div class="grid">
-                <div class="media-mention-card" data-aos="zoom-in" data-aos-duration="1500">
-                    <img class="imh" src="https://www.mxmindia.com/wp-content/uploads/2024/01/mxm-logo.webp" alt="Company Logo">
-                    <p class="mention-text">
-                        The partnership is expected to contribute significantly to the company’s growth.
-                    </p>
-                    <a href="https://mxmindia.com/tag/priyadarshi-mishra/" class="read-more-button" target="_blank">More</a>
-                </div>
-
-                <div class="media-mention-card" data-aos="zoom-in" data-aos-duration="1500">
-                    <img class="imh" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0lQtO0sFeImzWKIoCl5XTW-0NOgOQzF9s0Q&s" alt="Company Logo">
-                    <p class="mention-text">
-                        Interview with Mr. Priyadarshi Mishra, Founder & CEO, Design & Construct.
-                    </p>
-                    <a href="https://www.startupinsider.in/interview-with-mr-priyadarshi-mishra-founder-ceo-design-construct/" class="read-more-button" target="_blank">More</a>
-                </div>
-
-                <div class="media-mention-card" data-aos="zoom-in" data-aos-duration="1500">
-                    <img class="imh" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0lQtO0sFeImzWKIoCl5XTW-0NOgOQzF9s0Q&s" alt="Company Logo">
-                    <p class="mention-text">
-                        A go-getter by nature, Priyadarshi’s professional career has spanned over 16 years ...
-                    </p>
-                    <a href="https://www.99acres.com/articles/author/pmishra" class="read-more-button" target="_blank">More</a>
-                </div>
-
-                <div class="media-mention-card" data-aos="zoom-in" data-aos-duration="1500">
-                    <img class="imh" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0lQtO0sFeImzWKIoCl5XTW-0NOgOQzF9s0Q&s" alt="Company Logo">
-                    <p class="mention-text">
-                        We are a leading affordable construction company that deals with end-to-end needs ...
-                    </p>
-                    <a href="https://assianews.com/interview-with-mr-priyadarshi-mishra-founder-and-ceo-design-and-construct-a-part-of-all-about-buildings-pvt-ltd/8423/" class="read-more-button" target="_blank">More</a>
-                </div>
-
-                <!-- Add more media-mention-card divs as needed -->
-            </div>
-        </div>
-    </main>
-
-
-    <!--  ====== header extra info start================================== -->
-
-    <!--======footer-area-start============================================-->
-    <footer>
-        <div class="footer-area over-hidden pt-110 mb-80">
-            <div class="footer-top">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-4  col-lg-5  col-md-6  col-sm-7 col-12">
-                            <div class="footer-widget pb-40">
-                                <div class="foot-logo mb-30"><img src="images/logo/logo.svg" alt=""></div>
-                                <div class="copyright-text">
-                                    <!-- <p class="mb-0">All rights reserved <a href="https://themeforest.net/user/ethemestudio" class="c-theme primary-color f-700">eThemeStudio</a>© 2024 </p>-->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 offset-xl-2 col-lg-3  col-md-5 col-sm-4 col-12 d-none d-sm-block d-lg-none">
-                            <div class="footer-widget pb-40">
-                                <h5 class="mb-28 mt-2">Follow Me</h5>
-                                <ul class="social social-bg text-center d-flex">
-                                    <li class="mr-2 rotate-hover"><a class="facebook-bg text-center pr-0 text-white d-block transition-3 rotate" href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li class="mr-2 rotate-hover"><a class="twitter-bg text-center pr-0 text-white d-block rotate transition-3" href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li class="mr-2 rotate-hover"><a class="linkedin-bg text-center pr-0 text-white d-block rotate transition-3" href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li class="mr-2 rotate-hover"><a class="instagram-bg text-center pr-0 text-white d-block rotate transition-3" href="#"><i class="fab fa-instagram"></i></a></li>
-                                </ul>
-                                <!-- social -->
-                            </div>
-                        </div>
-                        <div class="col-xl-3  col-lg-4  col-md-10  col-sm-12 col-12">
-                            <div class="footer-widget pb-40">
-                                <!-- <h5 class="mb-28 mt-2">Newsletter</h5>-->
-                                <div class="newsletter-form">
-                                    <form action="#">
-                                        <!-- <div class="subscribe-info position-relative"><input class="sub-name theme-border pl-25 pt-15 pb-15 pr-10 w-100 secondary-color2 border-radius5 bg-white" type="email" name="email" id="Email" placeholder="Submit your email"><span class="d-block position-absolute theme-color cursor-pointer"><i class="fal fa-envelope"></i></span></div>-->
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 offset-xl-2 col-lg-3  col-md-4 col-sm-4 col-12  d-sm-none d-lg-block">
-                            <div class="footer-widget pb-40">
-                                <!-- <h5 class="mb-28 mt-2">Follow Me</h5>-->
-                                <ul class="social social-bg text-center d-flex">
-                                    <li class="mr-2 rotate-hover"><a class="facebook-bg text-center pr-0 text-white d-block transition-3 rotate" href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li class="mr-2 rotate-hover"><a class="twitter-bg text-center pr-0 text-white d-block rotate transition-3" href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li class="mr-2 rotate-hover"><a class="linkedin-bg text-center pr-0 text-white d-block rotate transition-3" href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li class="mr-2 rotate-hover"><a class="instagram-bg text-center pr-0 text-white d-block rotate transition-3" href="#"><i class="fab fa-instagram"></i></a></li>
-                                </ul>
-                                <!-- social -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /container -->
-            </div>
-        </div>
-    </footer>
-    <!-- back top -->
-    <div id="scroll" class="scrollTop text-right"><a href="#" class="theme-bg white-text text-center d-inline-block mr-10 transition5"><span><i class="fal fa-angle-double-up"></i></span></a></div>
-    <!-- All js here -->
-    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- knob-js -->
-    <script src="js/jquery-appear.js"></script>
-    <script src="js/jquery-knob.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
-    <script src="js/waypoint.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/counterup-min.js"></script>
-    <script src="js/tilt.jquery.min.js"></script>
-    <script src="js/one-page-nav-min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/leaflet.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/ajax-form.js"></script>
-    <script src="js/jquery.meanmenu.min.js"></script>
-    <script src="js/main.js"></script>
-</body>
-
-
-</html>
+                updateText();
+            });
+        </script>
+    </div>
+</main>
