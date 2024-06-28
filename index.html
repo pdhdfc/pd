@@ -97,6 +97,24 @@
             padding: 20px;
             margin-bottom: -7%;
         }
+        /* Hide the mobile image by default */
+        /* Media query for mobile view */
+        
+        @media only screen and (max-width: 768px) {
+            .desktop-image {
+                display: none;
+            }
+            .mobile-image {
+                display: block;
+            }
+            /* .main-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .image-container {
+                margin-bottom: 20px;
+            } */
+        }
         
         .image-container {
             width: 700px;
@@ -251,12 +269,16 @@
         </div>
         <main class="content-main">
             <div class="main-content">
-                <div class="image-container"><img src="images/slider/home5.svg" alt="Profile Picture"></div>
+                <div class="image-container">
+                    <img src="images/slider/home5.svg" alt="Profile Picture" class="desktop-image">
+                    <img src="images/slider/home5-mobile.svg" alt="Profile Picture" class="mobile-image">
+                </div>
                 <div class="text-content">
                     <h2>Founder & CEO</h2>
                     <p>All In one Hospitality Group</p>
                 </div>
             </div>
+
             <div class="entrepreneur-section">
                 <p id="animated-text" style="color: rgb(0, 0, 0); font-size: 30px; font-weight: bold; font-style: italic;">Entrepreneur | Investor | CEO | Construction | Banking | On Demand Services </p>
                 <script>
@@ -455,20 +477,18 @@
                                             </div>
                                             <div class="slideshow-container">
                                                 <div class="mySlides fade">
-                                                    <img src="https://businessreviewlive.com/wp-content/uploads/2022/08/Untitled-design-min-11.png" alt="Photo 1">
+                                                    <img src="images/recognitions/one.jpeg" alt="Photo 1">
+                                                </div>
+
+                                                <div class="mySlides fade">
+                                                    <img src="images/recognitions/two.jpeg" alt="Photo 3">
                                                 </div>
                                                 <div class="mySlides fade">
-                                                    <img src="https://www.constructionweekonline.in/cloud/2022/08/04/Pic-1.jpg" alt="Photo 2">
+                                                    <img src="images/recognitions/three.jpeg" alt="Photo 4">
                                                 </div>
-                                                <!-- <div class="mySlides fade">
-                                                    <img src="https://priyadarshi.netlify.app/images/portfolio/portfolio-img4.jpg" alt="Photo 3">
-                                                </div> -->
                                                 <div class="mySlides fade">
-                                                    <img src="https://www.mxmindia.com/wp-content/uploads/2021/12/Yuvraaj-Singh-Priyadarshi-Mishra.jpeg" alt="Photo 4">
+                                                    <img src="images/recognitions/four.jpg" alt="Photo 5">
                                                 </div>
-                                                <!-- <div class="mySlides fade">
-                                                    <img src="https://priyadarshi.netlify.app/images/portfolio/portfolio-img4.jpg" alt="Photo 5">
-                                                </div> -->
                                             </div>
                                         </div>
 
