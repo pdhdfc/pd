@@ -1,0 +1,1795 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+
+<!-- Mirrored from ethemestudio.com/demo/thames/5_home_modern/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 18 Jun 2024 06:07:30 GMT -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>PD Mishra</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" href="images/logo/favicon-16x16.png" type="image/x-icon">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;family=Play:wght@400;700&amp;display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
+    <!-- AOS JS -->
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+    <!-- All css here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/leaflet.css">
+    <link rel="stylesheet" href="css/meanmenu.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+
+
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+    <!--  ====== preloader=============================================  -->
+    <div id="preloader">
+        <div id="loading">
+            <div id="loading-center">
+                <div id="loading-center-absolute">
+                    <div class="object" id="object_one"></div>
+                    <div class="object" id="object_two"></div>
+                    <div class="object" id="object_three"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /preloader -->
+    <style>
+        .sec {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            /* background: rgb(255, 255, 255);
+            background: linear-gradient(0deg, rgba(255, 255, 255, 1) 5%, rgba(154, 219, 177, 1) 21%, rgba(79, 193, 119, 1) 46%, rgba(3, 166, 60, 1) 83%); */
+            color: white;
+        }
+        
+        .main-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .site-logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .navigation {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .navigation a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .main-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 60px);
+            padding: 20px;
+            margin-bottom: -7%;
+        }
+        
+        .image-container {
+            width: 700px;
+            height: 700px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 20%;
+        }
+        
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .text-content {
+            margin-left: 40px;
+            color: white;
+        }
+        
+        .animated-text {
+            color: white;
+        }
+        
+        .sidebar-content {
+            margin-right: 40px;
+        }
+        
+        .text-content h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #98c949;
+        }
+        
+        .text-content p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #98c949;
+        }
+        
+        .fixed-sidebar {
+            width: 200px;
+            padding: 20px;
+            height: 100vh;
+            position: fixed;
+            top: 40%;
+            left: 10%;
+            font-style: italic;
+            font-weight: bold;
+            /* background-color: #333; */
+            color: white;
+        }
+        
+        .fixed-sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .fixed-sidebar li {
+            margin-bottom: 10px;
+        }
+        
+        .fixed-sidebar a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+        
+        .content-main {
+            margin-left: 240px;
+            flex-grow: 1;
+        }
+        
+        .entrepreneur-section {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: 15%;
+            color: white;
+        }
+        
+        .sidebar-content,
+        .about-section {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 50%;
+            background-color: #ff0000;
+            color: white;
+            margin: 20px;
+        }
+        
+        .site-logo img {
+            width: 150px;
+        }
+        
+        .mobile-menu-button {
+            display: none;
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+        }
+        
+        .mobile-menu-button button {
+            background-color: #03a63c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        
+        @media (max-width: 768px) {
+            .fixed-sidebar {
+                width: 250px;
+                height: 100%;
+                position: fixed;
+                top: 0;
+                left: -250px;
+                transition: left 0.3s;
+            }
+            .mobile-menu-button {
+                display: block;
+            }
+            .content-main {
+                margin-left: 0;
+            }
+        }
+    </style>
+
+    <section class="sec">
+        <header>
+            <div class="main-container">
+                <div class="site-logo"><img src="images/logo/logo2.svg" alt="Priyadarshi Mishar Logo"></div>
+                <div class="mobile-menu-button"><button onclick="toggleDrawer()">☰ Menu</button></div>
+            </div>
+        </header>
+        <style>
+            .fixed-sidebar ul li a {
+                color: #98c949;
+            }
+        </style>
+
+        <div class="fixed-sidebar" id="mobileDrawer">
+            <ul>
+                <li><a href="#home" class="st">Home</a></li>
+                <li><a href="about.html" class="st">About</a></li>
+                <li><a href="events.html" class="st">Events</a></li>
+                <li><a href="media.html" class="st">Media</a></li>
+                <li><a href="#contact" class="st">Contact</a></li>
+                <li><a href="blogs.html" class="st">Blogs</a></li>
+            </ul>
+        </div>
+
+        <main class="content-main">
+            <div class="main-content">
+                <div class="image-container"><img src="images/slider/home5.svg" alt="Profile Picture"></div>
+                <div class="text-content">
+                    <h2>Founder & CEO</h2>
+                    <p>All In one Hospitality Group</p>
+                </div>
+            </div>
+            <div class="entrepreneur-section">
+                <p id="animated-text" style="color: rgb(0, 0, 0); font-size: 30px; font-weight: bold; font-style: italic;">Entrepreneur | Investor | CEO | Construction | Banking | On Demand Services </p>
+                <script>
+                    document.addEventListener('DOMContentLoaded', () => {
+                            const words = ["Entrepreneur", "Investor", "CEO", "Construction", "Banking", "On Demand Services"];
+                            let currentIndex = 0;
+                            const textElement = document.getElementById('animated-text');
+
+                            function updateText() {
+                                textElement.textContent = words[currentIndex];
+                                currentIndex = (currentIndex + 1) % words.length;
+                                setTimeout(updateText, 1000); // Change word every 1 seconds
+                            }
+                            updateText();
+                        }
+
+                    );
+
+                    function toggleDrawer() {
+                        var drawer = document.getElementById("mobileDrawer");
+                        if (drawer.style.left === "-250px") {
+                            drawer.style.left = "0";
+                        } else {
+                            drawer.style.left = "-250px";
+                        }
+                    }
+                </script>
+            </div>
+        </main>
+    </section>
+    <div class="content">
+        <div class="side-mobile-menu pt-15 pb-30 pl-30 pr-20 pb-100">
+            <div class="d-fle justify-content-between w-100">
+                <div class="close-icon d-inline-block float-right clear-both mt-20 mb-15"><a href="javascript:void(0);"><span class="icon-clear theme-color"><i class="fa fa-times"></i></span></a></div>
+            </div>
+            <div class="mobile-menu mt-10"></div>
+            <h6 class="text-white text-center mt-35 pb-1 d-inline-block ml-3">Follow me</h6>
+            <ul class="social social-bg text-center d-flex mt-10 ml-3">
+                <li class="mr-2 rotate-hover"><a class="facebook-bg text-center pr-0 text-white d-block transition-3 rotate" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="mr-2 rotate-hover"><a class="twitter-bg text-center pr-0 text-white d-block rotate transition-3" href="#"><i class="fab fa-twitter"></i></a></li>
+                <li class="mr-2 rotate-hover"><a class="linkedin-bg text-center pr-0 text-white d-block rotate transition-3" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li class="mr-2 rotate-hover"><a class="instagram-bg text-center pr-0 text-white d-block rotate transition-3" href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+            <!-- social -->
+        </div>
+        <!-- /side-mobile-menu -->
+        <div class="body-overlay"></div>
+        <!-- header extra info end -->
+        <main>
+            <div class="over-hidden">
+                <!--======slider-area-start===========================================-->
+                <!-- slider-area-end -->
+                <!--======about-area-start===========================================-->
+                <div id="about" class="about-area mt-170 mb-105">
+                    <div class="about-content-wrapper position-relative" data-aos="zoom-in" data-aos-duration="1500">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-6 col-md-12 offset-md-0 col-sm-11 offset-sm-1 col-12">
+                                    <div class="about-img-wrapper position-relative mb-100">
+                                        <div class="about-img position-relative z-index11" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="300">
+                                            <div class="about-img-over over-hidden transition5 d-inline-block position-relative"><img class="border-radius12 tilt" src="images/about/about-img.jpg" alt=""></div>
+                                        </div>
+                                        <div class="about-color-shape-bg theme-bg position-absolute tilt" data-aos="zoom-in" data-aos-duration="2500"></div>
+                                        <div class="about-color-shape-bg secondary-bg position-absolute z-index-1 tilt" data-aos="zoom-in" data-aos-duration="2600"></div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                    <div class="about-content position-relative mb-50" data-aos="zoom-in" data-aos-duration="2000">
+                                        <div class="position-relative">
+                                            <div class="title"><span class="theme-color f-700 d-block mb-6 mt--5">About Me</span>
+                                                <h3 class="f-700 mb-30">Entrepreneur </h3>
+                                            </div>
+                                            <div class="skill-shape shape shape-up-down-animation position-absolute"><img src="images/slider/shape/shape2.png" alt=""></div>
+                                        </div>
+                                        <p class="mb-25">IIM Kozhikode Graduate | Strategy & Management | </p>
+                                        <p>Construction & Architecture Specialist From humble beginnings to reaching great heights, my journey embodies the spirit of perseverance. With a specialized focus on strategy, management, construction, and architecture,
+                                            I bring a wealth of expertise to every endeavor. I believe in evolving alongside my team, working collaboratively to achieve remarkable success. Let's connect and make a lasting impact together.</p>
+                                        <p>Construction & Architecture Specialist From humble beginnings to reaching great heights, my journey embodies the spirit of perseverance. With a specialized focus on strategy, management, construction, and architecture,
+                                            I bring a wealth of expertise to every endeavor. I believe in evolving alongside my team, working collaboratively to achieve remarkable success. Let's connect and make a lasting impact together.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-yellow-shadow position-absolute right-0 z-index-1" data-aos="zoom-in" data-aos-duration="1500"><img src="images/slider/shape/about-yellow-shadow.png" alt=""></div>
+                        <div class="about-blue-shadow position-absolute right-0 z-index-1" data-aos="zoom-in" data-aos-duration="1500"><img src="images/slider/shape/about-blue-shadow.png" alt=""></div>
+                    </div>
+                </div>
+                <!-- AOS JS -->
+                <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+                <script>
+                    AOS.init({
+                            duration: 1200, // values from 0 to 3000, with step 50ms
+                        }
+
+                    );
+                </script>
+                <!-- about-area-end -->
+                <!--======fun-fact-area-start===========================================-->
+                <!-- <div class="fun-fact-area fun-fact-bg over-hidden pt-105 pb-80" data-aos="fade-up" data-aos-duration="1800"><div class="container"><div class="row justify-content-center align-items-center"><div class="col-xl-4  col-lg-4  col-md-4  col-sm-4 col-12 "><div class="single-fact d-flex d-sm-block d-lg-flex align-items-center mb-30"><div class="mr-25"><span class="theme-color f-700 d-inline-block ">20+</span></div><p class="text-white f-700 mb-0">Years of <br>Experience</p></div></div><div class="col-xl-4  col-lg-4  col-md-4  col-sm-4 col-12  d-lg-flex justify-content-center"><div class="single-fact d-flex d-sm-block d-lg-flex align-items-center mb-30"><p class="text-white f-700 mb-0">Worked <br>With</p><div class="mr-25 d-flex align-content-start"><span class="theme-color f-700 d-inline-block ">10</span><span class="per d-inline-block f-700 theme-color mt-1">+</span></div><p class="text-white f-700 mb-0">Companies</p></div></div><div class="col-xl-4  col-lg-4  col-md-4  col-sm-4 col-12 d-lg-flex justify-content-end"><div class="single-fact d-flex d-sm-block d-lg-flex align-items-center mb-30"><div class="mr-25 d-flex align-content-start"><span class="theme-color f-700 d-inline-block">50</span><span class="theme-color f-700 d-inline-block"></span><span class="per d-inline-block f-700 theme-color mt-1">+</span></div><p class="text-white f-700 mb-0">Winning <br>Awards</p></div></div></div></div></div>-->
+                <!-- /fun-fact-area -->
+                <!-- fun-fact-area-end -->
+                <!--======portfolio-area-start===========================================-->
+                <div id="work" class="portfolio-area over-hidden pt-155 pb-140" data-aos="zoom-in" data-aos-duration="1500">
+                    <div class="portfolio-wrapper position-relative">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <div class="title text-center mb-65" data-aos="zoom-in" data-aos-duration="1500"><span class="theme-color f-700 d-block mb-6">Portfolio</span>
+                                        <h3 class="mb-20">My Works</h3>
+                                    </div>
+                                    <!-- /title -->
+                                    <style>
+                                        .portfolio-area {
+                                            background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+                                        }
+                                        
+                                        .portfolio-content {
+                                            display: flex;
+                                            flex-wrap: wrap;
+                                            justify-content: center;
+                                            align-items: center;
+                                            gap: 20px;
+                                        }
+                                        
+                                        .portfolio-text {
+                                            flex: 1;
+                                            min-width: 300px;
+                                            padding: 20px;
+                                            font-family: Arial, sans-serif;
+                                        }
+                                        
+                                        .slideshow-container {
+                                            flex: 1;
+                                            min-width: 300px;
+                                            max-width: 500px;
+                                            position: relative;
+                                            margin: auto;
+                                            overflow: hidden;
+                                        }
+                                        
+                                        .mySlides {
+                                            display: none;
+                                        }
+                                        
+                                        .mySlides img {
+                                            width: 100%;
+                                            height: auto;
+                                            animation: zoomIn 5s ease-in-out infinite;
+                                        }
+                                        
+                                        @keyframes zoomIn {
+                                            0% {
+                                                transform: scale(1);
+                                            }
+                                            50% {
+                                                transform: scale(1.2);
+                                            }
+                                            100% {
+                                                transform: scale(1);
+                                            }
+                                        }
+                                        
+                                        .fade {
+                                            animation: fade 5s ease-in-out infinite;
+                                        }
+                                        
+                                        @keyframes fade {
+                                            0%,
+                                            20%,
+                                            100% {
+                                                opacity: 0;
+                                            }
+                                            10%,
+                                            90% {
+                                                opacity: 1;
+                                            }
+                                        }
+                                    </style>
+
+                                    <div class="portfolio-content">
+                                        <div class="portfolio-text">
+                                            <p>Construction & Architecture Specialist From humble beginnings to reaching great heights, my journey embodies the spirit of perseverance. With a specialized focus on strategy, management, construction, and architecture,
+                                                I bring a wealth of expertise to every endeavor. I believe in evolving alongside my team, working collaboratively to achieve remarkable success. Let's connect and make a lasting impact together. Construction
+                                                & Architecture Specialist From humble beginnings to reaching great heights, my journey embodies the spirit of perseverance. With a specialized focus on strategy, management, construction, and architecture,
+                                                I bring a wealth of expertise to every endeavor. I believe in evolving alongside my team, working collaboratively to achieve remarkable success. Let's connect and make a lasting impact together.
+                                            </p>
+                                        </div>
+                                        <div class="slideshow-container">
+                                            <div class="mySlides fade">
+                                                <img src="https://priyadarshi.netlify.app/images/education/education-img.jpg" alt="Photo 1">
+                                            </div>
+                                            <div class="mySlides fade">
+                                                <img src="https://priyadarshi.netlify.app/images/portfolio/portfolio-img6.jpg" alt="Photo 2">
+                                            </div>
+                                            <div class="mySlides fade">
+                                                <img src="https://priyadarshi.netlify.app/images/portfolio/portfolio-img4.jpg" alt="Photo 3">
+                                            </div>
+                                            <div class="mySlides fade">
+                                                <img src="https://priyadarshi.netlify.app/images/education/education-img.jpg" alt="Photo 4">
+                                            </div>
+                                            <div class="mySlides fade">
+                                                <img src="https://priyadarshi.netlify.app/images/portfolio/portfolio-img4.jpg" alt="Photo 5">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <script>
+                                        let slideIndex = 0;
+                                        showSlides();
+
+                                        function showSlides() {
+                                            let i;
+                                            let slides = document.getElementsByClassName("mySlides");
+                                            for (i = 0; i < slides.length; i++) {
+                                                slides[i].style.display = "none";
+                                            }
+                                            slideIndex++;
+                                            if (slideIndex > slides.length) {
+                                                slideIndex = 1
+                                            }
+                                            slides[slideIndex - 1].style.display = "block";
+                                            setTimeout(showSlides, 5000); // Change image every 5 seconds
+                                        }
+                                    </script>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /portfolio-wrapper -->
+                </div>
+
+
+                <!-- AOS JS -->
+                <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+                <script>
+                    AOS.init({
+                        duration: 1200, // values from 0 to 3000, with step 50ms
+                    });
+                </script>
+                <!-- portfolio-area-end -->
+                <!--======award-area-start===========================================-->
+                <div class="award-area secondary-bg over-hidden position-relative z-index11 pt-150 pb-170" data-aos="zoom-in" data-aos-duration="1500">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div class="title text-center mb-65" data-aos="zoom-in" data-aos-duration="1500">
+                                    <span class="theme-color f-700 d-block mb-6">Success Stories</span>
+                                    <h3 class="mb-20">Awards & Achievements</h3>
+                                </div>
+                                <!-- /title -->
+                            </div>
+                        </div>
+
+                        <div class="award-wrapper mt-60">
+                            <div class="row align-items-start theme-border-top award-margin pt-40 pb-35" data-aos="zoom-in" data-aos-duration="1500">
+                                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-11 col-12">
+                                    <div class="award-logo mt-10 mb-20">
+                                        <a href="#" class="d-block"><img src="images/award/award-logo1.png" alt=""></a>
+                                    </div>
+                                    <!-- /award-logo -->
+                                </div>
+
+                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-11 col-12">
+                                    <div class="award-content">
+                                        <h5 class="mb-1">Best Developer Award</h5>
+                                        <p>2022</p>
+                                    </div>
+                                    <!-- /award-content -->
+                                </div>
+
+                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-11 col-12">
+                                    <div class="award-content">
+                                        <h5 class="mb-1">Developer Association</h5>
+                                        <p>New York, USA</p>
+                                    </div>
+                                    <!-- /award-content -->
+                                </div>
+
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-11 col-12">
+                                    <div class="award-content">
+                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolore.</p>
+                                    </div>
+                                    <!-- /award-content -->
+                                </div>
+                            </div>
+
+                            <div class="row align-items-start theme-border-top award-margin pt-40 pb-35" data-aos="zoom-in" data-aos-duration="1500">
+                                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-11 col-12">
+                                    <div class="award-logo mt-10 mb-20">
+                                        <a href="#" class="d-block"><img src="images/award/award-logo2.png" alt=""></a>
+                                    </div>
+                                    <!-- /award-logo -->
+                                </div>
+
+                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-11 col-12">
+                                    <div class="award-content">
+                                        <h5 class="mb-1">Developer of the Year</h5>
+                                        <p>2021</p>
+                                    </div>
+                                    <!-- /award-content -->
+                                </div>
+
+                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-11 col-12">
+                                    <div class="award-content">
+                                        <h5 class="mb-1">Dev International</h5>
+                                        <p>London, England</p>
+                                    </div>
+                                    <!-- /award-content -->
+                                </div>
+
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-11 col-12">
+                                    <div class="award-content">
+                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolore.</p>
+                                    </div>
+                                    <!-- /award-content -->
+                                </div>
+                            </div>
+
+                            <div class="row align-items-start theme-border-top theme-border-bottom award-margin pt-40 pb-35" data-aos="zoom-in" data-aos-duration="1500">
+                                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-11 col-12">
+                                    <div class="award-logo mt-10 mb-20">
+                                        <a href="#" class="d-block"><img src="images/award/award-logo3.png" alt=""></a>
+                                    </div>
+                                    <!-- /award-logo -->
+                                </div>
+
+                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-11 col-12">
+                                    <div class="award-content">
+                                        <h5 class="mb-1">Fastest Coder</h5>
+                                        <p>2019</p>
+                                    </div>
+                                    <!-- /award-content -->
+                                </div>
+
+                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-11 col-12">
+                                    <div class="award-content">
+                                        <h5 class="mb-1">Amazing Programmer</h5>
+                                        <p>Dhaka, Bangladesh</p>
+                                    </div>
+                                    <!-- /award-content -->
+                                </div>
+
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-11 col-12">
+                                    <div class="award-content">
+                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolore.</p>
+                                    </div>
+                                    <!-- /award-content -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /award-wrapper -->
+                    </div>
+                    <!-- /container -->
+                </div>
+
+                <!-- AOS JS -->
+                <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+                <script>
+                    AOS.init({
+                        duration: 1200, // values from 0 to 3000, with step 50ms
+                    });
+                </script>
+                <!-- /award-area -->
+                <!-- award-area-end -->
+                <!--======experience-area-start===========================================-->
+                <div class="experience-area pb-165" data-aos="zoom-in" data-aos-duration="1500">
+                    <div class="experience-wrapper extra-width position-relative">
+                        <div class="experience-bg-img left-0 top-0 bottom-0 bg-cover no-repeat w-50 position-absolute" data-background="images/work/work-img.jpg"></div>
+                        <div class="container">
+                            <div class="row">
+                                <!-- <div class="row flex-column-reverse flex-lg-row">-->
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-none">
+                                    <div class="experience-img" data-aos="fade-right" data-aos-duration="2000">
+                                        <!-- <img src="images/work/work-img.jpg" alt="">--></div>
+                                    <!-- /experience-img -->
+                                </div>
+
+                                <div class="col-xl-6 col-lg-6 offset-lg-6 col-md-12 col-sm-12 col-12">
+                                    <div class="experience-margin mt-160 pb-80 pl-90 mb-50">
+                                        <div class="position-relative">
+                                            <div class="title"><span class="theme-color f-700 d-block mb-6 mt--5">Work Experience</span>
+                                                <h3 class="f-700 mb-20">My Experience</h3>
+                                                <p>Sed ut perspiciatis unde omnis iste natus kobita tumi sopno charini hoye khbor nio na sit voluptatem.</p>
+                                            </div>
+                                            <!-- /title -->
+                                        </div>
+                                        <div class="experience-wrapper pt-15">
+                                            <ul class="experience-content">
+                                                <li class="mb-32 d-flex align-items-start rotate-hover">
+                                                    <div class="experience-ser-icon theme-bg d-inline-block text-center mt-10 mr-30"><span class="white-text d-inline-block"><span class="d-block rotate flat-family flaticon-briefcase"></span></span>
+                                                    </div>
+
+                                                    <div class="experience-service-text d-inline-block">
+                                                        <h5 class="mb-1">Chief Executive Officer</h5>
+                                                        <h6>All in one group <span class="primary-color">
+                                                                an 2021 - Present</span></h6>
+                                                        <!-- <p class="mb-0">Ludantium totam rem aperia meaque ipsa quae ab illo inven tore veritatis et quasi architecto beatae vitae.</p> -->
+                                                    </div>
+                                                </li>
+                                                <li class="mb-32 d-flex align-items-start rotate-hover">
+                                                    <div class="experience-ser-icon theme-bg d-inline-block text-center mt-10 mr-30"><span class="white-text d-inline-block"><span class="d-block rotate flat-family flaticon-briefcase"></span></span>
+                                                    </div>
+
+                                                    <div class="experience-service-text d-inline-block">
+                                                        <h5 class="mb-1">Vice President</h5>
+                                                        <h6>Housejoy <span class="primary-color">
+                                                                May 2020 - Jan 2021</span></h6>
+                                                        <!-- <p class="mb-0">Ludantium totam rem aperia meaque ipsa quae ab illo inven tore veritatis et quasi architecto beatae vitae.</p> -->
+                                                    </div>
+                                                </li>
+                                                <li class="mb-32 d-flex align-items-start rotate-hover">
+                                                    <div class="experience-ser-icon theme-bg d-inline-block text-center mt-10 mr-30"><span class="white-text d-inline-block"><span class="d-block rotate flat-family flaticon-briefcase"></span></span>
+                                                    </div>
+
+                                                    <div class="experience-service-text d-inline-block">
+                                                        <h5 class="mb-1">
+                                                            AVP | Head - Sales & Business Development</h5>
+                                                        <h6>Housejoy<span class="primary-color">Feb 2019 - May 2020</span></h6>
+                                                        <p class="mb-0">Spearheading the entire top line growth for Housejoy in the Interiors , Renovation & Construction vertical.</p>
+                                                    </div>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                        <!-- /experience-wrapper -->
+                                    </div>
+                                    <!-- /experience-margin -->
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- /container -->
+                        <div class="experience-blue-shadow position-absolute z-index-1"><img src="images/slider/shape/experience-blue-shadow.png" alt=""></div>
+                        <!-- /blue-shadow -->
+                        <div class="experience-red-shadow position-absolute right-0 z-index-1"><img src="images/slider/shape/experience-red-shadow.png" alt=""></div>
+                        <!-- /red-shadow -->
+                        <div class="experience-yellow-shadow position-absolute right-0 z-index-1"><img src="images/slider/shape/experience-yellow-shadow.png" alt=""></div>
+                        <!-- /yellow-shadow -->
+                    </div>
+                    <!-- /experience-wrapper -->
+                </div>
+                <script>
+                    AOS.init({
+                        duration: 1200, // values from 0 to 3000, with step 50ms
+                    });
+                </script>
+                <!-- experience-area-end -->
+                <!--======education-area-start===========================================-->
+                <div class="education-area" data-aos="zoom-in" data-aos-duration="1500">
+                    <div class="container">
+                        <div class="row position-relative">
+                            <div class="col-xl-6 col-lg-6  col-md-12 col-sm-12 col-12">
+                                <div class="position-relative">
+                                    <div class="title"><span class="theme-color f-700 d-block mb-1 mt--8">Education</span>
+                                        <h3 class="f-700 mb-20">My Education</h3>
+                                        <p>Sed ut perspiciatis unde omnis iste natus kobita tumi sopno charini hoye khbor nio na sit voluptatem accusantium dolore.</p>
+                                    </div>
+                                    <!-- /title -->
+                                </div>
+                                <div class="education-wrapper mr-20 pt-15 mb-50">
+                                    <ul class="education-content">
+                                        <li class="mb-32 d-flex align-items-start rotate-hover">
+                                            <div class="experience-ser-icon theme-bg d-inline-block text-center mt-10 mr-30"><span class="white-text d-inline-block"><span class="d-block rotate flat-family flaticon-graduation-cap"></span></span>
+                                            </div>
+                                            <!-- /education-ser-icon -->
+                                            <div class="experience-service-text d-inline-block">
+                                                <h5 class="mb-1">Masters in Computer Science</h5>
+                                                <h6>New York University <span class="primary-color">( 2012 - 2016)</span></h6>
+                                                <p class="mb-0">Ludantium totam rem aperia meaque ipsa quae ab illo inven tore veritatis et quasi architecto beatae vitae.</p>
+                                            </div>
+                                        </li>
+                                        <li class="mb-32 d-flex align-items-start rotate-hover">
+                                            <div class="experience-ser-icon theme-bg d-inline-block text-center mt-10 mr-30"><span class="white-text d-inline-block"><span class="d-block rotate flat-family flaticon-graduation-cap"></span></span>
+                                            </div>
+                                            <!-- /education-ser-icon -->
+                                            <div class="experience-service-text d-inline-block">
+                                                <h5 class="mb-1">Bachelor in Computer Engineering</h5>
+                                                <h6>Dhaka University <span class="primary-color">( 2008 - 2011)</span></h6>
+                                                <p class="mb-0">Ludantium totam rem aperia meaque ipsa quae ab illo inven tore veritatis et quasi architecto beatae vitae.</p>
+                                            </div>
+                                        </li>
+                                        <li class="mb-32 d-flex align-items-start rotate-hover">
+                                            <div class="experience-ser-icon theme-bg d-inline-block text-center mt-10 mr-30"><span class="white-text d-inline-block"><span class="d-block rotate flat-family flaticon-graduation-cap"></span></span>
+                                            </div>
+                                            <!-- /education-ser-icon -->
+                                            <div class="experience-service-text d-inline-block">
+                                                <h5 class="mb-1">Diploma in Graphic Design</h5>
+                                                <h6>Bangla College <span class="primary-color">( 2006 - 2008)</span></h6>
+                                                <p class="mb-0">Ludantium totam rem aperia meaque ipsa quae ab illo inven tore veritatis et quasi architecto beatae vitae.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- /education-wrapper -->
+                            </div>
+
+                            <div class="col-xl-5 offset-xl-1 col-lg-6 col-md-12 col-sm-12 col-12">
+                                <div class="education-img position-relative text-center" data-aos="fade-left" data-aos-duration="2000"><img class="border-radius12" src="images/education/education-img.jpg" alt=""></div>
+                                <!-- /education-img -->
+                            </div>
+
+                            <div class="skill-shape shape shape-up-down-animation position-absolute"><img src="images/slider/shape/shape2.png" alt=""></div>
+                            <!-- /skill-shape -->
+                        </div>
+
+                        <div class="theme-border-bottom pt-145"></div>
+                    </div>
+                    <!-- /container -->
+                </div>
+                <!-- education-area-end -->
+                <!--======skill-area-start===========================================-->
+
+                <!-- skill-area-end -->
+                <!--======pricing-area-start===========================================-->
+
+                <!-- pricing-area-end -->
+                <!--======service-area-start===========================================-->
+                <div id="service" class="service-area over-hidden pt-155 pb-140" data-aos="zoom-in" data-aos-duration="1500">
+                    <div class="service-wrapper position-relative">
+                        <div class="container">
+                            <div class="row align-items-start">
+                                <div class="col-xl-12 col-lg-12  col-md-12  col-sm-12 col-12">
+                                    <div class="title text-center"><span class="theme-color f-700 d-block mb-6">Service</span>
+                                        <h3>What I Do</h3>
+                                    </div>
+                                    <!-- /title -->
+                                </div>
+
+                            </div>
+
+                            <div class="row service-wrapper mt-80">
+                                <div class="col-xl-6  col-lg-6  col-md-6  col-sm-12 col-12" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="500">
+                                    <div class="single-service shadow-hover transition3 white-bg border-radius12 pl-50 pr-50 pt-65 pb-55 mb-25">
+                                        <div class="row">
+                                            <div class="col-xl-3  col-lg-3  col-md-6  col-sm-4 col-5 text-lg-center">
+                                                <div class="service-ser-icon d-inline-block text-center position-relative mb-15"><img class="position-relative z-index1" src="images/work/service-icon-1.png" alt="">
+                                                    <div class="service-small-circle service-circle rounded-circle transition5 secondary-bg d-inline-block position-absolute"></div>
+                                                    <div class="service-large-circle service-circle rounded-circle transition5 secondary-bg d-inline-block position-absolute"></div>
+                                                </div>
+                                                <!-- /service-ser-icon -->
+                                            </div>
+
+                                            <div class="col-xl-9  col-lg-9  col-md-12  col-sm-12 col-12">
+                                                <div class="service-text d-inline-block ml-xl-2">
+                                                    <h4 class="mb-15">Web Social Presence</h4>
+                                                    <p class="mb-0">Ludantium totam rem aperia meaququae ab tatis et quasi architecto beatae vit dunt ut labore et dolore magna aliqua.</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- /single-service -->
+                                </div>
+
+                                <div class="col-xl-6  col-lg-6  col-md-6  col-sm-12 col-12" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1200" data-aos-delay="500">
+                                    <div class="single-service shadow-hover transition3 white-bg border-radius12 pl-50 pr-50 pt-65 pb-55 mb-25">
+                                        <div class="row">
+                                            <div class="col-xl-3  col-lg-3  col-md-6  col-sm-4 col-5 text-lg-center">
+                                                <div class="service-ser-icon d-inline-block text-center position-relative mb-15"><img class="position-relative z-index1" src="images/work/service-icon-2.png" alt="">
+                                                    <div class="service-small-circle service-circle rounded-circle transition5 secondary-bg d-inline-block position-absolute"></div>
+                                                    <div class="service-large-circle service-circle rounded-circle transition5 secondary-bg d-inline-block position-absolute"></div>
+                                                </div>
+                                                <!-- /service-ser-icon -->
+                                            </div>
+
+                                            <div class="col-xl-9  col-lg-9  col-md-12  col-sm-12 col-12">
+                                                <div class="service-text d-inline-block ml-xl-2">
+                                                    <h4 class="mb-15">Social Presence</h4>
+                                                    <p class="mb-0">Ludantium totam rem aperia meaququae ab tatis et quasi architecto beatae vit dunt ut labore et dolore magna aliqua.</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- /single-service -->
+                                </div>
+
+                                <div class="col-xl-6  col-lg-6  col-md-6  col-sm-12 col-12" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+                                    <div class="single-service shadow-hover transition3 white-bg border-radius12 pl-50 pr-50 pt-65 pb-55 mb-25">
+                                        <div class="row">
+                                            <div class="col-xl-3  col-lg-3  col-md-6  col-sm-4 col-5 text-lg-center">
+                                                <div class="service-ser-icon d-inline-block text-center position-relative mb-15"><img class="position-relative z-index1" src="images/work/service-icon-3.png" alt="">
+                                                    <div class="service-small-circle service-circle rounded-circle transition5 secondary-bg d-inline-block position-absolute"></div>
+                                                    <div class="service-large-circle service-circle rounded-circle transition5 secondary-bg d-inline-block position-absolute"></div>
+                                                </div>
+                                                <!-- /service-ser-icon -->
+                                            </div>
+
+                                            <div class="col-xl-9  col-lg-9  col-md-12  col-sm-12 col-12">
+                                                <div class="service-text d-inline-block ml-xl-2">
+                                                    <h4 class="mb-15">System Social Presence</h4>
+                                                    <p class="mb-0">Ludantium totam rem aperia meaququae ab tatis et quasi architecto beatae vit dunt ut labore et dolore magna aliqua.</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- /single-service -->
+                                </div>
+
+                                <div class="col-xl-6  col-lg-6  col-md-6  col-sm-12 col-12" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1200">
+                                    <div class="single-service shadow-hover transition3 white-bg border-radius12 pl-50 pr-50 pt-65 pb-55 mb-25">
+                                        <div class="row">
+                                            <div class="col-xl-3  col-lg-3  col-md-6  col-sm-4 col-5 text-lg-center">
+                                                <div class="service-ser-icon d-inline-block text-center position-relative mb-15"><img class="position-relative z-index1" src="images/work/service-icon-4.png" alt="">
+                                                    <div class="service-small-circle service-circle rounded-circle transition5 secondary-bg d-inline-block position-absolute"></div>
+                                                    <div class="service-large-circle service-circle rounded-circle transition5 secondary-bg d-inline-block position-absolute"></div>
+                                                </div>
+                                                <!-- /service-ser-icon -->
+                                            </div>
+
+                                            <div class="col-xl-9  col-lg-9  col-md-12  col-sm-12 col-12">
+                                                <div class="service-text d-inline-block ml-xl-2">
+                                                    <h4 class="mb-15">Security Analysis</h4>
+                                                    <p class="mb-0">Ludantium totam rem aperia meaququae ab tatis et quasi architecto beatae vit dunt ut labore et dolore magna aliqua.</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- /single-service -->
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- /container -->
+                        <div class="service-blue-shadow position-absolute left-0 z-index-1"><img src="images/slider/shape/service-blue-shadow.png" alt=""></div>
+                        <!-- /blue-shadow -->
+                        <div class="service-red-shadow position-absolute right-0 z-index-1"><img src="images/slider/shape/service-red-shadow.png" alt=""></div>
+                        <!-- /red-shadow -->
+                        <div class="service-yellow-shadow position-absolute left-0 z-index-1"><img src="images/slider/shape/service-yellow-shadow.png" alt=""></div>
+                        <!-- /yellow-shadow -->
+                    </div>
+                    <!-- /service-wrapper -->
+                </div>
+                <!-- service-area-end -->
+                <!--======testimonial-area-start===============================================-->
+                <div class="testimonial-area over-hidden" data-aos="zoom-in" data-aos-duration="1500">
+                    <div class="container">
+                        <div class="testimonial-bg secondary-bg pt-170 pb-170 position-relative">
+                            <div class="row align-items-start justify-content-center">
+                                <div class="col-xl-7 col-lg-7 col-md-12  col-sm-12 col-12">
+                                    <div class="position-relative">
+                                        <div class="title"><span class="theme-color f-700 d-block mb-6">Testimonials</span>
+                                            <h3 class="mb-20">What People Say</h3>
+                                        </div>
+                                        <!-- /title -->
+                                        <div class="skill-shape shape shape-up-down-animation position-absolute"><img src="images/slider/shape/shape3.png" alt=""></div>
+                                        <!-- /skill-shape -->
+                                    </div>
+                                    <div class="testimonial-wrapper position-relative mt-70 pb-50">
+                                        <div class="quit d-inline-block position-absolute left-0"><img class="theme-color" src="images/testimonial/testimonial-icon.png" alt=""></div>
+                                        <div class="testimonial-active pl-80 pr-90">
+                                            <div class="testimonial-content">
+                                                <blockquote class="testimonial-text position-relative mb-0 font-italic primary-font-family">Excepteur sint occaecat cupidatat non proiden sunt in culpa qui officia deserunt mollit anim id est laebor um. Sed ut perspiciatis unde omnis iste natus error sit volup tatem gotiraz bole ami ke</blockquote>
+                                                <div class="testi-info d-flex align-items-center mt-40">
+                                                    <div class="testi-avatar mr-25"><img class="rounded-circle" src="images/testimonial/author-img.jpg" alt=""></div>
+                                                    <!-- /testi-avatar -->
+                                                    <div class="avatar-info">
+                                                        <h6 class="mb-1">Paul Harrison,
+                                                        </h6>
+                                                        <p class="mb-0">eThemeStudio</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /testimonial-content -->
+                                            <div class="testimonial-content">
+                                                <blockquote class="testimonial-text position-relative mb-0 font-italic primary-font-family">Excepteur sint occaecat cupidatat non proiden sunt in culpa qui officia deserunt mollit anim id est laebor um. Sed ut perspiciatis unde omnis iste natus error sit volup tatem gotiraz bole ami ke</blockquote>
+                                                <div class="testi-info d-flex align-items-center mt-40">
+                                                    <div class="testi-avatar mr-25"><img class="rounded-circle" src="images/testimonial/author-img.jpg" alt=""></div>
+                                                    <!-- /testi-avatar -->
+                                                    <div class="avatar-info">
+                                                        <h6 class="mb-1">Paul Harrison,
+                                                        </h6>
+                                                        <p class="mb-0">eThemeStudio</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /testimonial-content -->
+                                            <div class="testimonial-content">
+                                                <blockquote class="testimonial-text position-relative mb-0 font-italic primary-font-family">Excepteur sint occaecat cupidatat non proiden sunt in culpa qui officia deserunt mollit anim id est laebor um. Sed ut perspiciatis unde omnis iste natus error sit volup tatem gotiraz bole ami ke</blockquote>
+                                                <div class="testi-info d-flex align-items-center mt-40">
+                                                    <div class="testi-avatar mr-25"><img class="rounded-circle" src="images/testimonial/author-img.jpg" alt=""></div>
+                                                    <!-- /testi-avatar -->
+                                                    <div class="avatar-info">
+                                                        <h6 class="mb-1">Paul Harrison,
+                                                        </h6>
+                                                        <p class="mb-0">eThemeStudio</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /testimonial-content -->
+                                        </div>
+                                    </div>
+                                    <!-- /testimonial-wrapper -->
+                                </div>
+
+                                <div class="col-xl-5 col-lg-5 col-md-12 col-sm-11 col-12">
+                                    <div class="testimonial-img" data-aos="fade-left" data-aos-duration="1500"><img src="images/testimonial/testimonials-img.jpg" alt=""></div>
+                                    <!-- /testimonial-img -->
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- /container -->
+                </div>
+                <!-- testimonial-area-end -->
+                <!--======brand-area-start===============================================-->
+                <div class="brand-area brand-height over-hidden" data-aos="zoom-in" data-aos-duration="1500">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12  col-md-12  col-sm-12 col-12">
+                                <ul class="brand-active  pt-90 pb-50">
+                                    <li>
+                                        <a class="single-brand mb-40 d-block text-center" href="index.html"><img class="zoom-img img" src="images/brand/brand-img1.png" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a class="single-brand mb-40 d-block text-center" href="index.html"><img class="zoom-img img" src="images/brand/brand-img2.png" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a class="single-brand mb-40 d-block text-center" href="index.html"><img class="zoom-img img" src="images/brand/brand-img3.png" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a class="single-brand mb-40 d-block text-center" href="index.html"><img class="zoom-img img" src="images/brand/brand-img4.png" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a class="single-brand mb-40 d-block text-center" href="index.html"><img class="zoom-img img" src="images/brand/brand-img5.png" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a class="single-brand mb-40 d-block text-center" href="index.html"><img class="zoom-img img" src="images/brand/brand-img1.png" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a class="single-brand mb-40 d-block text-center" href="index.html"><img class="zoom-img img" src="images/brand/brand-img2.png" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a class="single-brand mb-40 d-block text-center" href="index.html"><img class="zoom-img img" src="images/brand/brand-img3.png" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a class="single-brand mb-40 d-block text-center" href="index.html"><img class="zoom-img img" src="images/brand/brand-img4.png" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a class="single-brand mb-40 d-block text-center" href="index.html"><img class="zoom-img img" src="images/brand/brand-img5.png" alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div class="theme-border-bottom"></div>
+                    </div>
+                    <!-- /container -->
+                </div>
+                <!-- brand-area-end -->
+                <!--======contact-area-start===============================================-->
+                <div id="contact" class="contact-area mb-165 mt-155" data-aos="zoom-in" data-aos-duration="1500">
+                    <div class="contact-wrapper position-relative">
+                        <div class="container">
+                            <div class="row align-items-start">
+                                <div class="col-xl-12 col-lg-12  col-md-12  col-sm-12 col-12">
+                                    <div class="title text-center"><span class="theme-color f-700 d-block mb-6">Contact Me</span>
+                                        <h3>Let’s Start A New Project</h3>
+                                    </div>
+                                    <!-- /title -->
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-5 col-md-12  col-sm-12 col-12">
+                                    <div class="contact-wrapper mt-70">
+                                        <ul class="contact-info-content">
+                                            <li class="contact-location s-contact mb-20 transition-3 d-lg-flex align-items-center">
+                                                <div class="contact-icon d-inline-block text-center theme-bg mr-30"><span class="text-white d-inline-block"><i class="fas fa-map-marker-alt"></i></span></div>
+                                                <!-- /contact-icon -->
+                                                <div class="contact-text d-inline-block">
+                                                    <h6 class="f-700 mb-2">Location</h6>
+                                                    <p class="secondary-color mb-0">20 Bordeshi, London, Usa
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <!-- /contact-location -->
+                                            <li class="contact-email s-contact mb-20 transition-3 d-lg-flex  align-items-center">
+                                                <div class="contact-icon d-inline-block text-center theme-bg mr-30"><span class="text-white d-inline-block"><i class="fas fa-phone-alt"></i></span></div>
+                                                <!-- /contact-icon -->
+                                                <div class="contact-text">
+                                                    <h6 class="f-700 mb-2">Phone</h6>
+                                                    <p class="mb-0"><a class="secondary-color2 primary-hover d-block" href="#">+123 456 7890</a></p>
+                                                </div>
+                                            </li>
+                                            <!-- /contact-email -->
+                                            <li class="contact-phone s-contact mb-20 transition-3 d-lg-flex  align-items-center">
+                                                <div class="contact-icon d-inline-block text-center theme-bg mr-30"><span class="text-white d-inline-block"><i class="fas fa-envelope"></i></span></div>
+                                                <!-- /contact-icon -->
+                                                <div class="contact-text d-inline-block">
+                                                    <h6 class="f-700 mb-2">Email</h6>
+                                                    <p class="mb-0"><a class="secondary-color2 primary-hover d-block" href="#">hello@hibro.com</a></p>
+                                                </div>
+                                            </li>
+                                            <!-- /contact-phone -->
+                                        </ul>
+                                        <!-- /contact-info-content -->
+                                    </div>
+                                    <!-- /contact-wrapper -->
+                                </div>
+
+                                <div class="col-xl-6 col-lg-7 col-md-12  col-sm-12 col-12">
+                                    <div class="contact-wrapper">
+                                        <div class="contact-form mt-45">
+                                            <form action="https://ethemestudio.com/demo/thames/5_home_modern/php/mail.php" method="POST" id="contact-form">
+                                                <div class="contact-info pt-20">
+                                                    <div class="row">
+                                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 pr6 mb-12" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000"><input class="name w-100 theme-border pl-20 pt-15 pb-15 pr-10 form-color border-radius5 primary-font-family" type="text" name="inputName" id="inputName" placeholder="Your Name">
+                                                            <!-- /name -->
+                                                        </div>
+
+                                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 pl6 pr-12 mb-12" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2500"><input class="email w-100 theme-border pl-20 pt-15 pb-15 pr-10 form-color border-radius5 primary-font-family" type="email" name="inputEmail" id="inputEmail" placeholder="Your Email">
+                                                            <!-- /email -->
+                                                        </div>
+
+                                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 pr6 mb-12" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000"><input class="phone w-100 theme-border pl-20 pt-15 pb-15 pr-10 form-color border-radius5 primary-font-family" type="text" name="inputPhone" id="inputPhone" placeholder="Your Phone">
+                                                            <!-- /phone -->
+                                                        </div>
+
+                                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 pl6 pr-12 mb-12" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2500"><input class="subject w-100 theme-border pl-20 pt-15 pb-15 pr-10 form-color border-radius5 primary-font-family" type="text" name="inputSubject" id="inputSubject" placeholder="Your Subject">
+                                                            <!-- /subject -->
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="row ">
+                                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 pl-12 pr-12 mb-12" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000"><textarea class="massage w-100 theme-border pl-20 pt-15 pr-10 primary-color border-radius5 primary-font-family" name="inputMessage" id="inputMessage" placeholder="Start writing message here"></textarea></div>
+
+                                                    </div>
+                                                    <button class="btn position-relative over-hidden text-white d-inline-block theme-bg white-text" type="submit" name="submit" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2500">Submit Now</button></div>
+                                            </form>
+                                            <p class="form-message mt-20"></p>
+                                        </div>
+                                        <!-- /contact-form -->
+                                    </div>
+                                    <!-- /contact-wrapper -->
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                        <!-- /container -->
+                        <div class="contact-blue-shadow position-absolute left-0 top-0 z-index-1"><img src="images/slider/shape/contact-blue.png" alt=""></div>
+                        <!-- /blue-shadow -->
+                        <div class="contact-red-shadow position-absolute left-0 top-0 z-index-1"><img src="images/slider/shape/contact-red.png" alt=""></div>
+                        <!-- /red-shadow -->
+                        <div class="contact-yellow-shadow position-absolute left-0 z-index-1"><img src="images/slider/shape/contact-yellow.png" alt=""></div>
+                        <!-- /yellow-shadow -->
+                    </div>
+                    <!-- /contact-wrapper -->
+                </div>
+                <!-- contact-area-end -->
+                <!--======blog-area-start=========================================-->
+                <div id="blog" class="blog-area secondary-bg pt-155 pb-120" data-aos="zoom-in" data-aos-duration="1500">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12  col-md-12  col-sm-12 col-12">
+                                <div class="title"><span class="theme-color f-700 d-block mb-6">Get Updates</span>
+                                    <h3>Recent Blog</h3>
+                                </div>
+                                <!-- /title -->
+                            </div>
+
+                        </div>
+
+                        <div class="row justify-content-center blog-wrapper blog-active mt-75">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                <div class="single-blog mb-50 shadow-hover transition3">
+
+                                    <a href="blog1.html">
+                                        <div class="blog-img">
+                                            <img class="w-100 img transition5" src="images/blog/blog-img1.gif" alt="">
+                                        </div>
+                                    </a>
+
+                                    <div class="single-blog-content bg-white pl-30 pt-25 pb-15 pr-20">
+                                        <ul class="blog-meta">
+                                            <li class="mr-15 d-inline-block"><span class="theme-color d-inline-block mr-1"><i class="fas fa-folder"></i></span><span class="secondary-color2 d-inline-block">Media Mentions</span></li>
+                                            <li class="mr-15 d-inline-block"><span class="theme-color d-inline-block mr-1"><i class="fas fa-user"></i></span><a class="secondary-color2 d-inline-block" href="#">Admin</a></li>
+                                            <li class="mr-15 d-inline-block"><span class="theme-color d-inline-block mr-1"><i class="fas fa-comment"></i></span><span class="secondary-color2 d-inline-block">22</span></li>
+                                        </ul>
+                                        <!-- /blog-meta -->
+                                        <h6 class="mb-10 mt-1"><a class="primary-hover" href="#" data-toggle="modal" data-target="#exampleModal-b1">Jim Morrison says when the musics over turn off the light</a></h6>
+                                    </div>
+                                </div>
+                                <!-- /single-blog -->
+                            </div>
+
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                <div class="single-blog mb-50 shadow-hover transition3">
+                                    <div class="blog-img"><img class="w-100 img transition5" src="images/blog/blog-img2.jpg" alt=""></div>
+                                    <div class="single-blog-content bg-white pl-30 pt-25 pb-15 pr-20">
+                                        <ul class="blog-meta">
+                                            <li class="mr-15 d-inline-block"><span class="theme-color d-inline-block mr-1"><i class="fas fa-folder"></i></span><span class="secondary-color2 d-inline-block">Media Mentions</span></li>
+                                            <li class="mr-15 d-inline-block"><span class="theme-color d-inline-block mr-1"><i class="fas fa-user"></i></span><a class="secondary-color2 d-inline-block" href="#">Admin</a></li>
+                                            <li class="mr-15 d-inline-block"><span class="theme-color d-inline-block mr-1"><i class="fas fa-comment"></i></span><span class="secondary-color2 d-inline-block">22</span></li>
+                                        </ul>
+                                        <!-- /blog-meta -->
+                                        <h6 class="mb-10 mt-1"><a class="primary-hover" href="#" data-toggle="modal" data-target="#exampleModal-b2">Jim Morrison says when the musics over turn off the light</a></h6>
+                                    </div>
+                                </div>
+                                <!-- /single-blog -->
+                            </div>
+
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                <div class="single-blog mb-50 shadow-hover transition3">
+                                    <div class="blog-img"><img class="w-100 img transition5" src="images/blog/blog-img3.jpg" alt=""></div>
+                                    <div class="single-blog-content bg-white pl-30 pt-25 pb-15 pr-20">
+                                        <ul class="blog-meta">
+                                            <li class="mr-15 d-inline-block"><span class="theme-color d-inline-block mr-1"><i class="fas fa-folder"></i></span><span class="secondary-color2 d-inline-block">Media Mentions</span></li>
+                                            <li class="mr-15 d-inline-block"><span class="theme-color d-inline-block mr-1"><i class="fas fa-user"></i></span><a class="secondary-color2 d-inline-block" href="#">Admin</a></li>
+                                            <li class="mr-15 d-inline-block"><span class="theme-color d-inline-block mr-1"><i class="fas fa-comment"></i></span><span class="secondary-color2 d-inline-block">22</span></li>
+                                        </ul>
+                                        <!-- /blog-meta -->
+                                        <h6 class="mb-10 mt-1"><a class="primary-hover" href="#" data-toggle="modal" data-target="#exampleModal-b3">Jim Morrison says when the musics over turn off the light</a></h6>
+                                    </div>
+                                </div>
+                                <!-- /single-blog -->
+                            </div>
+
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                <div class="single-blog mb-50 shadow-hover transition3">
+                                    <div class="blog-img"><img class="w-100 img transition5" src="images/blog/blog-img1.gif" alt=""></div>
+                                    <div class="single-blog-content bg-white pl-30 pt-25 pb-15 pr-20">
+                                        <ul class="blog-meta">
+                                            <li class="mr-15 d-inline-block"><span class="theme-color d-inline-block mr-1"><i class="fas fa-folder"></i></span><span class="secondary-color2 d-inline-block">Media Mentions</span></li>
+                                            <li class="mr-15 d-inline-block"><span class="theme-color d-inline-block mr-1"><i class="fas fa-user"></i></span><a class="secondary-color2 d-inline-block" href="#">Admin</a></li>
+                                            <li class="mr-15 d-inline-block"><span class="theme-color d-inline-block mr-1"><i class="fas fa-comment"></i></span><span class="secondary-color2 d-inline-block">22</span></li>
+                                        </ul>
+                                        <!-- /blog-meta -->
+                                        <h6 class="mb-10 mt-1"><a class="primary-hover" href="#" data-toggle="modal" data-target="#exampleModal-b4">Jim Morrison says when the musics over turn off the light</a></h6>
+                                    </div>
+                                </div>
+                                <!-- /single-blog -->
+                            </div>
+
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                <div class="single-blog mb-50 shadow-hover transition3">
+                                    <div class="blog-img"><img class="w-100 img transition5" src="images/blog/blog-img2.jpg" alt=""></div>
+                                    <div class="single-blog-content bg-white pl-30 pt-25 pb-15 pr-20">
+                                        <ul class="blog-meta">
+                                            <li class="mr-15 d-inline-block"><span class="theme-color d-inline-block mr-1"><i class="fas fa-folder"></i></span><span class="secondary-color2 d-inline-block">Media Mentions</span></li>
+                                            <li class="mr-15 d-inline-block"><span class="theme-color d-inline-block mr-1"><i class="fas fa-user"></i></span><a class="secondary-color2 d-inline-block" href="#">Admin</a></li>
+                                            <li class="mr-15 d-inline-block"><span class="theme-color d-inline-block mr-1"><i class="fas fa-comment"></i></span><span class="secondary-color2 d-inline-block">22</span></li>
+                                        </ul>
+                                        <!-- /blog-meta -->
+                                        <h6 class="mb-10 mt-1"><a class="primary-hover" href="#" data-toggle="modal" data-target="#exampleModal-b5">Jim Morrison says when the musics over turn off the light</a></h6>
+                                    </div>
+                                </div>
+                                <!-- /single-blog -->
+                            </div>
+
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                <div class="single-blog mb-50 shadow-hover transition3">
+                                    <div class="blog-img"><img class="w-100 img transition5" src="images/blog/blog-img3.jpg" alt=""></div>
+                                    <div class="single-blog-content bg-white pl-30 pt-25 pb-15 pr-20">
+                                        <ul class="blog-meta">
+                                            <li class="mr-15 d-inline-block"><span class="theme-color d-inline-block mr-1"><i class="fas fa-folder"></i></span><span class="secondary-color2 d-inline-block">Media Mentions</span></li>
+                                            <li class="mr-15 d-inline-block"><span class="theme-color d-inline-block mr-1"><i class="fas fa-user"></i></span><a class="secondary-color2 d-inline-block" href="#">Admin</a></li>
+                                            <li class="mr-15 d-inline-block"><span class="theme-color d-inline-block mr-1"><i class="fas fa-comment"></i></span><span class="secondary-color2 d-inline-block">22</span></li>
+                                        </ul>
+                                        <!-- /blog-meta -->
+                                        <h6 class="mb-10 mt-1"><a class="primary-hover" href="#" data-toggle="modal" data-target="#exampleModal-b6">Jim Morrison says when the musics over turn off the light</a></h6>
+                                    </div>
+                                </div>
+                                <!-- /single-blog -->
+                            </div>
+
+                        </div>
+
+                        <div class="blog-modal-wrapper">
+                            <!-- Modal 1 start -->
+                            <div class="modal fade" id="exampleModal-b1" tabindex="-1" role="dialog" aria-labelledby="exampleModal-b1" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="close-icon float-right pt-10 pr-10"><button type="button" class="close d-inline-block" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button></div>
+                                        <div class="modal-content border-0">
+                                            <div class="modal-body pl-50 pr-50 pt-10 pb-50">
+                                                <div class="blog-modal-img"><img class="w-100" src="images/blog/blog-img1.gif" alt="blog post image 02"></div>
+                                                <div class="row align-items-center justify-content-center">
+                                                    <div class="col-xl-10 col-lg-11  col-md-12 col-sm-12 col-12">
+                                                        <div class="content-wrapper">
+                                                            <h2 class="modal-title f-700 text-center">Lets make the begging to mankind to save the world again </h2>
+                                                            <ul class="blog-meta mb-30 d-flex align-items-center justify-content-between ml-auto mr-auto w-50">
+                                                                <li><a href="#" class="secondary-color"><i class="fas fa-folder-open"></i>Media Mentions </a></li>
+                                                                <li><span class="secondary-color d-block"><i class="fal fa-calendar-alt"></i>June,
+                                21,
+                                2022</span></li>
+                                                                <li><span class="secondary-color d-block"><i class="fal fa-clock"></i>10 min</span></li>
+                                                            </ul>
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ut recusandae assumenda. Nisi quaerat porro inventore ullam magnam beatae enim cumque. Facilis in maxime quos praesentium cupiditate
+                                                                cum commodi recusandae! </p>
+                                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus eos ipsam enim perspiciatis doloremque laborum dolor nihil aperiam vel necessitatibus unde cupiditate error eum maiores, sapiente
+                                                                ea. Quisquam sed, molestias veniam adipisci magnam ratione aspernatur delectus a assumenda, corrupti libero commodi eaque quis vel consequatur reiciendis dolor beatae distinctio voluptatum
+                                                                ducimus non optio. Deleniti nobis eius, nihil incidunt voluptate labore, debitis ducimus perspiciatis rerum iure doloremque minus omnis nostrum! Voluptatibus mollitia voluptate ipsa nesciunt
+                                                                animi blanditiis aliquam repellat quibusdam enim eos veniam similique tempora nihil optio, iure necessitatibus hic ipsum nisi maiores perspiciatis magni? Sed vero amet quidem natus consectetur!
+                                                            </p>
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ex dolorum aut accusantium, fugit sunt vero animi quos porro excepturi. Quia delectus nulla voluptatem unde incidunt. Magnam natus
+                                                                officiis saepe.
+                                                            </p>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aspernatur reiciendis corporis deleniti beatae? At, inventore necessitatibus repellat alias tenetur quisquam nam maiores eligendi sequi
+                                                                itaque voluptatum architecto minus numquam! </p>
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum dolore consequatur eius non incidunt fugit hic error accusantium, deserunt et magnam beatae, ipsa distinctio eaque laborum molestias
+                                                                maiores consectetur quo, expedita laboriosam quia quibusdam. Dolores dolorem, tenetur rerum veniam facilis eaque corporis ducimus laudantium excepturi officiis quaerat maiores voluptatem
+                                                                vero optio. Id culpa expedita ipsa enim omnis debitis. Beatae mollitia natus ullam repudiandae ipsa neque. Sequi explicabo odio cum, odit voluptatem cupiditate vero, error incidunt fuga dolore
+                                                                id ut! Eligendi, necessitatibus beatae voluptatem ipsum, ducimus amet sed officia ad aliquid aperiam id, eius accusamus quibusdam doloremque! Enim laudantium sint quae. </p>
+                                                            <div class="pro-modal-footer mt-30 mb-45">
+                                                                <div class="row align-items-center justify-content-md-between">
+                                                                    <div class="col-xl-7 col-lg-7  col-md-12 col-sm-12 col-12">
+                                                                        <div class="modal-tags d-sm-flex align-items-center pt-25">
+                                                                            <h6 class="mb-0 pr-15 f-700">Tags :</h6>
+                                                                            <ul class="tag-list">
+                                                                                <li class="d-inline-block pr-10 f-600"><a class="secondary-color d-block" href="#">Media Mentions</a></li>
+                                                                                <li class="d-inline-block pr-10 f-600"><a class="secondary-color d-block" href="#">Social Media</a></li>
+                                                                                <li class="d-inline-block pr-10 f-600"><a class="secondary-color d-block" href="#">Recent Blog</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-xl-5 col-lg-5  col-md-12 col-sm-12 col-12">
+                                                                        <div class="pro-modal-social-link d-flex align-items-center justify-content-lg-end pt-25">
+                                                                            <h6 class="text-uppercase pr-15 f-700 mb-0 pb-0">Share :</h6>
+                                                                            <ul class="social-link text-md-right">
+                                                                                <li class="d-inline-block"><a class="facebook-color text-center pl-15 d-inline-block transition-3" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                                                <li class="d-inline-block"><a class="twitter-color text-center pl-15 d-inline-block transition-3" href="#"><i class="fab fa-twitter"></i></a></li>
+                                                                                <li class="d-inline-block"><a class="google-plus-color text-center pl-15 d-inline-block transition-3" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                                                                <li class="d-inline-block"><a class="linkedin-color text-center pl-15 d-inline-block transition-3" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                                                            </ul>
+                                                                            <!-- social-link -->
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                                <!-- .row -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                            <!-- /modal-body -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal 1 end -->
+                            <!-- Modal 2 start -->
+                            <div class="modal fade" id="exampleModal-b2" tabindex="-1" role="dialog" aria-labelledby="exampleModal-b2" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="close-icon float-right pt-10 pr-10"><button type="button" class="close d-inline-block" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button></div>
+                                        <div class="modal-content border-0">
+                                            <div class="modal-body pl-50 pr-50 pt-10 pb-50">
+                                                <div class="blog-modal-img"><img class="w-100" src="images/blog/blog-img2.jpg" alt="blog post image 02"></div>
+                                                <div class="row align-items-center justify-content-center">
+                                                    <div class="col-xl-10 col-lg-11  col-md-12 col-sm-12 col-12">
+                                                        <div class="content-wrapper">
+                                                            <h2 class="modal-title f-700 text-center">Lets make the begging to mankind to save the world again </h2>
+                                                            <ul class="blog-meta mb-30 d-flex align-items-center justify-content-between ml-auto mr-auto w-50">
+                                                                <li><a href="#" class="secondary-color"><i class="fas fa-folder-open"></i>Media Mentions </a></li>
+                                                                <li><span class="secondary-color d-block"><i class="fal fa-calendar-alt"></i>June,
+                                21,
+                                2022</span></li>
+                                                                <li><span class="secondary-color d-block"><i class="fal fa-clock"></i>10 min</span></li>
+                                                            </ul>
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ut recusandae assumenda. Nisi quaerat porro inventore ullam magnam beatae enim cumque. Facilis in maxime quos praesentium cupiditate
+                                                                cum commodi recusandae! </p>
+                                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus eos ipsam enim perspiciatis doloremque laborum dolor nihil aperiam vel necessitatibus unde cupiditate error eum maiores, sapiente
+                                                                ea. Quisquam sed, molestias veniam adipisci magnam ratione aspernatur delectus a assumenda, corrupti libero commodi eaque quis vel consequatur reiciendis dolor beatae distinctio voluptatum
+                                                                ducimus non optio. Deleniti nobis eius, nihil incidunt voluptate labore, debitis ducimus perspiciatis rerum iure doloremque minus omnis nostrum! Voluptatibus mollitia voluptate ipsa nesciunt
+                                                                animi blanditiis aliquam repellat quibusdam enim eos veniam similique tempora nihil optio, iure necessitatibus hic ipsum nisi maiores perspiciatis magni? Sed vero amet quidem natus consectetur!
+                                                            </p>
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ex dolorum aut accusantium, fugit sunt vero animi quos porro excepturi. Quia delectus nulla voluptatem unde incidunt. Magnam natus
+                                                                officiis saepe.
+                                                            </p>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aspernatur reiciendis corporis deleniti beatae? At, inventore necessitatibus repellat alias tenetur quisquam nam maiores eligendi sequi
+                                                                itaque voluptatum architecto minus numquam! </p>
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum dolore consequatur eius non incidunt fugit hic error accusantium, deserunt et magnam beatae, ipsa distinctio eaque laborum molestias
+                                                                maiores consectetur quo, expedita laboriosam quia quibusdam. Dolores dolorem, tenetur rerum veniam facilis eaque corporis ducimus laudantium excepturi officiis quaerat maiores voluptatem
+                                                                vero optio. Id culpa expedita ipsa enim omnis debitis. Beatae mollitia natus ullam repudiandae ipsa neque. Sequi explicabo odio cum, odit voluptatem cupiditate vero, error incidunt fuga dolore
+                                                                id ut! Eligendi, necessitatibus beatae voluptatem ipsum, ducimus amet sed officia ad aliquid aperiam id, eius accusamus quibusdam doloremque! Enim laudantium sint quae. </p>
+                                                            <div class="pro-modal-footer mt-30 mb-45">
+                                                                <div class="row align-items-center justify-content-md-between">
+                                                                    <div class="col-xl-7 col-lg-7  col-md-12 col-sm-12 col-12">
+                                                                        <div class="modal-tags d-sm-flex align-items-center pt-25">
+                                                                            <h6 class="mb-0 pr-15 f-700">Tags :</h6>
+                                                                            <ul class="tag-list">
+                                                                                <li class="d-inline-block pr-10 f-600"><a class="secondary-color d-block" href="#">Media Mentions</a></li>
+                                                                                <li class="d-inline-block pr-10 f-600"><a class="secondary-color d-block" href="#">Social Media</a></li>
+                                                                                <li class="d-inline-block pr-10 f-600"><a class="secondary-color d-block" href="#">Recent Blog</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-xl-5 col-lg-5  col-md-12 col-sm-12 col-12">
+                                                                        <div class="pro-modal-social-link d-flex align-items-center justify-content-lg-end pt-25">
+                                                                            <h6 class="text-uppercase pr-15 f-700 mb-0 pb-0">Share :</h6>
+                                                                            <ul class="social-link text-md-right">
+                                                                                <li class="d-inline-block"><a class="facebook-color text-center pl-15 d-inline-block transition-3" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                                                <li class="d-inline-block"><a class="twitter-color text-center pl-15 d-inline-block transition-3" href="#"><i class="fab fa-twitter"></i></a></li>
+                                                                                <li class="d-inline-block"><a class="google-plus-color text-center pl-15 d-inline-block transition-3" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                                                                <li class="d-inline-block"><a class="linkedin-color text-center pl-15 d-inline-block transition-3" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                                                            </ul>
+                                                                            <!-- social-link -->
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                                <!-- .row -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                            <!-- /modal-body -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal 2 end -->
+                            <!-- Modal 3 start -->
+                            <div class="modal fade" id="exampleModal-b3" tabindex="-1" role="dialog" aria-labelledby="exampleModal-b3" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="close-icon float-right pt-10 pr-10"><button type="button" class="close d-inline-block" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button></div>
+                                        <div class="modal-content border-0">
+                                            <div class="modal-body pl-50 pr-50 pt-10 pb-50">
+                                                <div class="blog-modal-img"><img class="w-100" src="images/blog/blog-img3.jpg" alt="blog post image 02"></div>
+                                                <div class="row align-items-center justify-content-center">
+                                                    <div class="col-xl-10 col-lg-11  col-md-12 col-sm-12 col-12">
+                                                        <div class="content-wrapper">
+                                                            <h2 class="modal-title f-700 text-center">Lets make the begging to mankind to save the world again </h2>
+                                                            <ul class="blog-meta mb-30 d-flex align-items-center justify-content-between ml-auto mr-auto w-50">
+                                                                <li><a href="#" class="secondary-color"><i class="fas fa-folder-open"></i>Media Mentions </a></li>
+                                                                <li><span class="secondary-color d-block"><i class="fal fa-calendar-alt"></i>June,
+                                21,
+                                2022</span></li>
+                                                                <li><span class="secondary-color d-block"><i class="fal fa-clock"></i>10 min</span></li>
+                                                            </ul>
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ut recusandae assumenda. Nisi quaerat porro inventore ullam magnam beatae enim cumque. Facilis in maxime quos praesentium cupiditate
+                                                                cum commodi recusandae! </p>
+                                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus eos ipsam enim perspiciatis doloremque laborum dolor nihil aperiam vel necessitatibus unde cupiditate error eum maiores, sapiente
+                                                                ea. Quisquam sed, molestias veniam adipisci magnam ratione aspernatur delectus a assumenda, corrupti libero commodi eaque quis vel consequatur reiciendis dolor beatae distinctio voluptatum
+                                                                ducimus non optio. Deleniti nobis eius, nihil incidunt voluptate labore, debitis ducimus perspiciatis rerum iure doloremque minus omnis nostrum! Voluptatibus mollitia voluptate ipsa nesciunt
+                                                                animi blanditiis aliquam repellat quibusdam enim eos veniam similique tempora nihil optio, iure necessitatibus hic ipsum nisi maiores perspiciatis magni? Sed vero amet quidem natus consectetur!
+                                                            </p>
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ex dolorum aut accusantium, fugit sunt vero animi quos porro excepturi. Quia delectus nulla voluptatem unde incidunt. Magnam natus
+                                                                officiis saepe.
+                                                            </p>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aspernatur reiciendis corporis deleniti beatae? At, inventore necessitatibus repellat alias tenetur quisquam nam maiores eligendi sequi
+                                                                itaque voluptatum architecto minus numquam! </p>
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum dolore consequatur eius non incidunt fugit hic error accusantium, deserunt et magnam beatae, ipsa distinctio eaque laborum molestias
+                                                                maiores consectetur quo, expedita laboriosam quia quibusdam. Dolores dolorem, tenetur rerum veniam facilis eaque corporis ducimus laudantium excepturi officiis quaerat maiores voluptatem
+                                                                vero optio. Id culpa expedita ipsa enim omnis debitis. Beatae mollitia natus ullam repudiandae ipsa neque. Sequi explicabo odio cum, odit voluptatem cupiditate vero, error incidunt fuga dolore
+                                                                id ut! Eligendi, necessitatibus beatae voluptatem ipsum, ducimus amet sed officia ad aliquid aperiam id, eius accusamus quibusdam doloremque! Enim laudantium sint quae. </p>
+                                                            <div class="pro-modal-footer mt-30 mb-45">
+                                                                <div class="row align-items-center justify-content-md-between">
+                                                                    <div class="col-xl-7 col-lg-7  col-md-12 col-sm-12 col-12">
+                                                                        <div class="modal-tags d-sm-flex align-items-center pt-25">
+                                                                            <h6 class="mb-0 pr-15 f-700">Tags :</h6>
+                                                                            <ul class="tag-list">
+                                                                                <li class="d-inline-block pr-10 f-600"><a class="secondary-color d-block" href="#">Media Mentions</a></li>
+                                                                                <li class="d-inline-block pr-10 f-600"><a class="secondary-color d-block" href="#">Social Media</a></li>
+                                                                                <li class="d-inline-block pr-10 f-600"><a class="secondary-color d-block" href="#">Recent Blog</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-xl-5 col-lg-5  col-md-12 col-sm-12 col-12">
+                                                                        <div class="pro-modal-social-link d-flex align-items-center justify-content-lg-end pt-25">
+                                                                            <h6 class="text-uppercase pr-15 f-700 mb-0 pb-0">Share :</h6>
+                                                                            <ul class="social-link text-md-right">
+                                                                                <li class="d-inline-block"><a class="facebook-color text-center pl-15 d-inline-block transition-3" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                                                <li class="d-inline-block"><a class="twitter-color text-center pl-15 d-inline-block transition-3" href="#"><i class="fab fa-twitter"></i></a></li>
+                                                                                <li class="d-inline-block"><a class="google-plus-color text-center pl-15 d-inline-block transition-3" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                                                                <li class="d-inline-block"><a class="linkedin-color text-center pl-15 d-inline-block transition-3" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                                                            </ul>
+                                                                            <!-- social-link -->
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                                <!-- .row -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                            <!-- /modal-body -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal 3 end -->
+                            <!-- Modal 4 start -->
+                            <div class="modal fade" id="exampleModal-b4" tabindex="-1" role="dialog" aria-labelledby="exampleModal-b4" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="close-icon float-right pt-10 pr-10"><button type="button" class="close d-inline-block" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button></div>
+                                        <div class="modal-content border-0">
+                                            <div class="modal-body pl-50 pr-50 pt-10 pb-50">
+                                                <div class="blog-modal-img"><img class="w-100" src="images/blog/blog-img1.gif" alt="blog post image 02"></div>
+                                                <div class="row align-items-center justify-content-center">
+                                                    <div class="col-xl-10 col-lg-11  col-md-12 col-sm-12 col-12">
+                                                        <div class="content-wrapper">
+                                                            <h2 class="modal-title f-700 text-center">Lets make the begging to mankind to save the world again </h2>
+                                                            <ul class="blog-meta mb-30 d-flex align-items-center justify-content-between ml-auto mr-auto w-50">
+                                                                <li><a href="#" class="secondary-color"><i class="fas fa-folder-open"></i>Media Mentions </a></li>
+                                                                <li><span class="secondary-color d-block"><i class="fal fa-calendar-alt"></i>June,
+                                21,
+                                2022</span></li>
+                                                                <li><span class="secondary-color d-block"><i class="fal fa-clock"></i>10 min</span></li>
+                                                            </ul>
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ut recusandae assumenda. Nisi quaerat porro inventore ullam magnam beatae enim cumque. Facilis in maxime quos praesentium cupiditate
+                                                                cum commodi recusandae! </p>
+                                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus eos ipsam enim perspiciatis doloremque laborum dolor nihil aperiam vel necessitatibus unde cupiditate error eum maiores, sapiente
+                                                                ea. Quisquam sed, molestias veniam adipisci magnam ratione aspernatur delectus a assumenda, corrupti libero commodi eaque quis vel consequatur reiciendis dolor beatae distinctio voluptatum
+                                                                ducimus non optio. Deleniti nobis eius, nihil incidunt voluptate labore, debitis ducimus perspiciatis rerum iure doloremque minus omnis nostrum! Voluptatibus mollitia voluptate ipsa nesciunt
+                                                                animi blanditiis aliquam repellat quibusdam enim eos veniam similique tempora nihil optio, iure necessitatibus hic ipsum nisi maiores perspiciatis magni? Sed vero amet quidem natus consectetur!
+                                                            </p>
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ex dolorum aut accusantium, fugit sunt vero animi quos porro excepturi. Quia delectus nulla voluptatem unde incidunt. Magnam natus
+                                                                officiis saepe.
+                                                            </p>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aspernatur reiciendis corporis deleniti beatae? At, inventore necessitatibus repellat alias tenetur quisquam nam maiores eligendi sequi
+                                                                itaque voluptatum architecto minus numquam! </p>
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum dolore consequatur eius non incidunt fugit hic error accusantium, deserunt et magnam beatae, ipsa distinctio eaque laborum molestias
+                                                                maiores consectetur quo, expedita laboriosam quia quibusdam. Dolores dolorem, tenetur rerum veniam facilis eaque corporis ducimus laudantium excepturi officiis quaerat maiores voluptatem
+                                                                vero optio. Id culpa expedita ipsa enim omnis debitis. Beatae mollitia natus ullam repudiandae ipsa neque. Sequi explicabo odio cum, odit voluptatem cupiditate vero, error incidunt fuga dolore
+                                                                id ut! Eligendi, necessitatibus beatae voluptatem ipsum, ducimus amet sed officia ad aliquid aperiam id, eius accusamus quibusdam doloremque! Enim laudantium sint quae. </p>
+                                                            <div class="pro-modal-footer mt-30 mb-45">
+                                                                <div class="row align-items-center justify-content-md-between">
+                                                                    <div class="col-xl-7 col-lg-7  col-md-12 col-sm-12 col-12">
+                                                                        <div class="modal-tags d-sm-flex align-items-center pt-25">
+                                                                            <h6 class="mb-0 pr-15 f-700">Tags :</h6>
+                                                                            <ul class="tag-list">
+                                                                                <li class="d-inline-block pr-10 f-600"><a class="secondary-color d-block" href="#">Media Mentions</a></li>
+                                                                                <li class="d-inline-block pr-10 f-600"><a class="secondary-color d-block" href="#">Social Media</a></li>
+                                                                                <li class="d-inline-block pr-10 f-600"><a class="secondary-color d-block" href="#">Recent Blog</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-xl-5 col-lg-5  col-md-12 col-sm-12 col-12">
+                                                                        <div class="pro-modal-social-link d-flex align-items-center justify-content-lg-end pt-25">
+                                                                            <h6 class="text-uppercase pr-15 f-700 mb-0 pb-0">Share :</h6>
+                                                                            <ul class="social-link text-md-right">
+                                                                                <li class="d-inline-block"><a class="facebook-color text-center pl-15 d-inline-block transition-3" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                                                <li class="d-inline-block"><a class="twitter-color text-center pl-15 d-inline-block transition-3" href="#"><i class="fab fa-twitter"></i></a></li>
+                                                                                <li class="d-inline-block"><a class="google-plus-color text-center pl-15 d-inline-block transition-3" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                                                                <li class="d-inline-block"><a class="linkedin-color text-center pl-15 d-inline-block transition-3" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                                                            </ul>
+                                                                            <!-- social-link -->
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                                <!-- .row -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                            <!-- /modal-body -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal 4 end -->
+                            <!-- Modal 5 start -->
+                            <div class="modal fade" id="exampleModal-b5" tabindex="-1" role="dialog" aria-labelledby="exampleModal-b5" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="close-icon float-right pt-10 pr-10"><button type="button" class="close d-inline-block" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button></div>
+                                        <div class="modal-content border-0">
+                                            <div class="modal-body pl-50 pr-50 pt-10 pb-50">
+                                                <div class="blog-modal-img"><img class="w-100" src="images/blog/blog-img2.jpg" alt="blog post image 02"></div>
+                                                <div class="row align-items-center justify-content-center">
+                                                    <div class="col-xl-10 col-lg-11  col-md-12 col-sm-12 col-12">
+                                                        <div class="content-wrapper">
+                                                            <h2 class="modal-title f-700 text-center">Lets make the begging to mankind to save the world again </h2>
+                                                            <ul class="blog-meta mb-30 d-flex align-items-center justify-content-between ml-auto mr-auto w-50">
+                                                                <li><a href="#" class="secondary-color"><i class="fas fa-folder-open"></i>Media Mentions </a></li>
+                                                                <li><span class="secondary-color d-block"><i class="fal fa-calendar-alt"></i>June,
+                                21,
+                                2022</span></li>
+                                                                <li><span class="secondary-color d-block"><i class="fal fa-clock"></i>10 min</span></li>
+                                                            </ul>
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ut recusandae assumenda. Nisi quaerat porro inventore ullam magnam beatae enim cumque. Facilis in maxime quos praesentium cupiditate
+                                                                cum commodi recusandae! </p>
+                                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus eos ipsam enim perspiciatis doloremque laborum dolor nihil aperiam vel necessitatibus unde cupiditate error eum maiores, sapiente
+                                                                ea. Quisquam sed, molestias veniam adipisci magnam ratione aspernatur delectus a assumenda, corrupti libero commodi eaque quis vel consequatur reiciendis dolor beatae distinctio voluptatum
+                                                                ducimus non optio. Deleniti nobis eius, nihil incidunt voluptate labore, debitis ducimus perspiciatis rerum iure doloremque minus omnis nostrum! Voluptatibus mollitia voluptate ipsa nesciunt
+                                                                animi blanditiis aliquam repellat quibusdam enim eos veniam similique tempora nihil optio, iure necessitatibus hic ipsum nisi maiores perspiciatis magni? Sed vero amet quidem natus consectetur!
+                                                            </p>
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ex dolorum aut accusantium, fugit sunt vero animi quos porro excepturi. Quia delectus nulla voluptatem unde incidunt. Magnam natus
+                                                                officiis saepe.
+                                                            </p>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aspernatur reiciendis corporis deleniti beatae? At, inventore necessitatibus repellat alias tenetur quisquam nam maiores eligendi sequi
+                                                                itaque voluptatum architecto minus numquam! </p>
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum dolore consequatur eius non incidunt fugit hic error accusantium, deserunt et magnam beatae, ipsa distinctio eaque laborum molestias
+                                                                maiores consectetur quo, expedita laboriosam quia quibusdam. Dolores dolorem, tenetur rerum veniam facilis eaque corporis ducimus laudantium excepturi officiis quaerat maiores voluptatem
+                                                                vero optio. Id culpa expedita ipsa enim omnis debitis. Beatae mollitia natus ullam repudiandae ipsa neque. Sequi explicabo odio cum, odit voluptatem cupiditate vero, error incidunt fuga dolore
+                                                                id ut! Eligendi, necessitatibus beatae voluptatem ipsum, ducimus amet sed officia ad aliquid aperiam id, eius accusamus quibusdam doloremque! Enim laudantium sint quae. </p>
+                                                            <div class="pro-modal-footer mt-30 mb-45">
+                                                                <div class="row align-items-center justify-content-md-between">
+                                                                    <div class="col-xl-7 col-lg-7  col-md-12 col-sm-12 col-12">
+                                                                        <div class="modal-tags d-sm-flex align-items-center pt-25">
+                                                                            <h6 class="mb-0 pr-15 f-700">Tags :</h6>
+                                                                            <ul class="tag-list">
+                                                                                <li class="d-inline-block pr-10 f-600"><a class="secondary-color d-block" href="#">Media Mentions</a></li>
+                                                                                <li class="d-inline-block pr-10 f-600"><a class="secondary-color d-block" href="#">Social Media</a></li>
+                                                                                <li class="d-inline-block pr-10 f-600"><a class="secondary-color d-block" href="#">Recent Blog</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-xl-5 col-lg-5  col-md-12 col-sm-12 col-12">
+                                                                        <div class="pro-modal-social-link d-flex align-items-center justify-content-lg-end pt-25">
+                                                                            <h6 class="text-uppercase pr-15 f-700 mb-0 pb-0">Share :</h6>
+                                                                            <ul class="social-link text-md-right">
+                                                                                <li class="d-inline-block"><a class="facebook-color text-center pl-15 d-inline-block transition-3" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                                                <li class="d-inline-block"><a class="twitter-color text-center pl-15 d-inline-block transition-3" href="#"><i class="fab fa-twitter"></i></a></li>
+                                                                                <li class="d-inline-block"><a class="google-plus-color text-center pl-15 d-inline-block transition-3" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                                                                <li class="d-inline-block"><a class="linkedin-color text-center pl-15 d-inline-block transition-3" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                                                            </ul>
+                                                                            <!-- social-link -->
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                                <!-- .row -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                            <!-- /modal-body -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal 5 end -->
+                            <!-- Modal 6 start -->
+                            <div class="modal fade" id="exampleModal-b6" tabindex="-1" role="dialog" aria-labelledby="exampleModal-b6" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="close-icon float-right pt-10 pr-10"><button type="button" class="close d-inline-block" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button></div>
+                                        <div class="modal-content border-0">
+                                            <div class="modal-body pl-50 pr-50 pt-10 pb-50">
+                                                <div class="blog-modal-img"><img class="w-100" src="images/blog/blog-img3.jpg" alt="blog post image 02"></div>
+                                                <div class="row align-items-center justify-content-center">
+                                                    <div class="col-xl-10 col-lg-11  col-md-12 col-sm-12 col-12">
+                                                        <div class="content-wrapper">
+                                                            <h2 class="modal-title f-700 text-center">Lets make the begging to mankind to save the world again </h2>
+                                                            <ul class="blog-meta mb-30 d-flex align-items-center justify-content-between ml-auto mr-auto w-50">
+                                                                <li><a href="#" class="secondary-color"><i class="fas fa-folder-open"></i>Media Mentions </a></li>
+                                                                <li><span class="secondary-color d-block"><i class="fal fa-calendar-alt"></i>June,
+                                21,
+                                2022</span></li>
+                                                                <li><span class="secondary-color d-block"><i class="fal fa-clock"></i>10 min</span></li>
+                                                            </ul>
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ut recusandae assumenda. Nisi quaerat porro inventore ullam magnam beatae enim cumque. Facilis in maxime quos praesentium cupiditate
+                                                                cum commodi recusandae! </p>
+                                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus eos ipsam enim perspiciatis doloremque laborum dolor nihil aperiam vel necessitatibus unde cupiditate error eum maiores, sapiente
+                                                                ea. Quisquam sed, molestias veniam adipisci magnam ratione aspernatur delectus a assumenda, corrupti libero commodi eaque quis vel consequatur reiciendis dolor beatae distinctio voluptatum
+                                                                ducimus non optio. Deleniti nobis eius, nihil incidunt voluptate labore, debitis ducimus perspiciatis rerum iure doloremque minus omnis nostrum! Voluptatibus mollitia voluptate ipsa nesciunt
+                                                                animi blanditiis aliquam repellat quibusdam enim eos veniam similique tempora nihil optio, iure necessitatibus hic ipsum nisi maiores perspiciatis magni? Sed vero amet quidem natus consectetur!
+                                                            </p>
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ex dolorum aut accusantium, fugit sunt vero animi quos porro excepturi. Quia delectus nulla voluptatem unde incidunt. Magnam natus
+                                                                officiis saepe.
+                                                            </p>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aspernatur reiciendis corporis deleniti beatae? At, inventore necessitatibus repellat alias tenetur quisquam nam maiores eligendi sequi
+                                                                itaque voluptatum architecto minus numquam! </p>
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum dolore consequatur eius non incidunt fugit hic error accusantium, deserunt et magnam beatae, ipsa distinctio eaque laborum molestias
+                                                                maiores consectetur quo, expedita laboriosam quia quibusdam. Dolores dolorem, tenetur rerum veniam facilis eaque corporis ducimus laudantium excepturi officiis quaerat maiores voluptatem
+                                                                vero optio. Id culpa expedita ipsa enim omnis debitis. Beatae mollitia natus ullam repudiandae ipsa neque. Sequi explicabo odio cum, odit voluptatem cupiditate vero, error incidunt fuga dolore
+                                                                id ut! Eligendi, necessitatibus beatae voluptatem ipsum, ducimus amet sed officia ad aliquid aperiam id, eius accusamus quibusdam doloremque! Enim laudantium sint quae. </p>
+                                                            <div class="pro-modal-footer mt-30 mb-45">
+                                                                <div class="row align-items-center justify-content-md-between">
+                                                                    <div class="col-xl-7 col-lg-7  col-md-12 col-sm-12 col-12">
+                                                                        <div class="modal-tags d-sm-flex align-items-center pt-25">
+                                                                            <h6 class="mb-0 pr-15 f-700">Tags :</h6>
+                                                                            <ul class="tag-list">
+                                                                                <li class="d-inline-block pr-10 f-600"><a class="secondary-color d-block" href="#">Media Mentions</a></li>
+                                                                                <li class="d-inline-block pr-10 f-600"><a class="secondary-color d-block" href="#">Social Media</a></li>
+                                                                                <li class="d-inline-block pr-10 f-600"><a class="secondary-color d-block" href="#">Recent Blog</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-xl-5 col-lg-5  col-md-12 col-sm-12 col-12">
+                                                                        <div class="pro-modal-social-link d-flex align-items-center justify-content-lg-end pt-25">
+                                                                            <h6 class="text-uppercase pr-15 f-700 mb-0 pb-0">Share :</h6>
+                                                                            <ul class="social-link text-md-right">
+                                                                                <li class="d-inline-block"><a class="facebook-color text-center pl-15 d-inline-block transition-3" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                                                <li class="d-inline-block"><a class="twitter-color text-center pl-15 d-inline-block transition-3" href="#"><i class="fab fa-twitter"></i></a></li>
+                                                                                <li class="d-inline-block"><a class="google-plus-color text-center pl-15 d-inline-block transition-3" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                                                                <li class="d-inline-block"><a class="linkedin-color text-center pl-15 d-inline-block transition-3" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                                                            </ul>
+                                                                            <!-- social-link -->
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                                <!-- .row -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                            <!-- /modal-body -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal 6 end -->
+                        </div>
+                    </div>
+                    <!-- /container -->
+                </div>
+                <!-- blog-area-end -->
+            </div>
+        </main>
+    </div>
+
+
+    <!--======footer-area-start============================================-->
+    <footer>
+        <div class="footer-area over-hidden pt-110 mb-80">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-4  col-lg-5  col-md-6  col-sm-7 col-12">
+                            <div class="footer-widget pb-40">
+                                <div class="foot-logo mb-30"><img src="images/logo/logo.svg" alt=""></div>
+                                <div class="copyright-text">
+                                    <!-- <p class="mb-0">All rights reserved <a href="https://themeforest.net/user/ethemestudio" class="c-theme primary-color f-700">eThemeStudio</a>© 2024 </p> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 offset-xl-2 col-lg-3  col-md-5 col-sm-4 col-12 d-none d-sm-block d-lg-none">
+                            <div class="footer-widget pb-40">
+                                <h5 class="mb-28 mt-2">Follow Me</h5>
+                                <ul class="social social-bg text-center d-flex">
+                                    <li class="mr-2 rotate-hover"><a class="facebook-bg text-center pr-0 text-white d-block transition-3 rotate" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li class="mr-2 rotate-hover"><a class="twitter-bg text-center pr-0 text-white d-block rotate transition-3" href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li class="mr-2 rotate-hover"><a class="linkedin-bg text-center pr-0 text-white d-block rotate transition-3" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li class="mr-2 rotate-hover"><a class="instagram-bg text-center pr-0 text-white d-block rotate transition-3" href="#"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                                <!-- social -->
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3  col-lg-4  col-md-10  col-sm-12 col-12">
+                            <div class="footer-widget pb-40">
+                                <!-- <h5 class="mb-28 mt-2">Newsletter</h5> -->
+                                <div class="newsletter-form">
+                                    <form action="#">
+                                        <!-- <div class="subscribe-info position-relative"><input class="sub-name theme-border pl-25 pt-15 pb-15 pr-10 w-100 secondary-color2 border-radius5 bg-white" type="email" name="email" id="Email" placeholder="Submit your email"><span class="d-block position-absolute theme-color cursor-pointer"><i class="fal fa-envelope"></i></span></div> -->
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 offset-xl-2 col-lg-3  col-md-4 col-sm-4 col-12  d-sm-none d-lg-block">
+                            <div class="footer-widget pb-40">
+                                <!-- <h5 class="mb-28 mt-2">Follow Me</h5> -->
+                                <ul class="social social-bg text-center d-flex">
+                                    <li class="mr-2 rotate-hover"><a class="facebook-bg text-center pr-0 text-white d-block transition-3 rotate" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li class="mr-2 rotate-hover"><a class="twitter-bg text-center pr-0 text-white d-block rotate transition-3" href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li class="mr-2 rotate-hover"><a class="linkedin-bg text-center pr-0 text-white d-block rotate transition-3" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li class="mr-2 rotate-hover"><a class="instagram-bg text-center pr-0 text-white d-block rotate transition-3" href="#"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                                <!-- social -->
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- /container -->
+            </div>
+        </div>
+    </footer>
+    <!-- back top -->
+    <div id="scroll" class="scrollTop text-right"><a href="#" class="theme-bg white-text text-center d-inline-block mr-10 transition5"><span><i class="fal fa-angle-double-up"></i></span></a></div>
+    <!-- All js here -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- knob-js -->
+    <script src="js/jquery-appear.js"></script>
+    <script src="js/jquery-knob.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/waypoint.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/counterup-min.js"></script>
+    <script src="js/tilt.jquery.min.js"></script>
+    <script src="js/one-page-nav-min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/leaflet.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/jquery.meanmenu.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+
+</html>
