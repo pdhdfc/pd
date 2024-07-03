@@ -122,6 +122,7 @@
             border-radius: 50%;
             overflow: hidden;
             margin-bottom: 20%;
+            margin-left: auto;
         }
         
         .image-container img {
@@ -131,8 +132,19 @@
         }
         
         .text-content {
+            margin-left: center;
+            color: white;
+            margin-top: -400px;
+            margin-left: 10px;
+        }
+        
+        .text-content2 {
             margin-left: 40px;
             color: white;
+            /* margin-left: 156px; */
+            /* Adjust this value to move right */
+            margin-top: 438px;
+            /* Adjust this value to move down */
         }
         
         .animated-text {
@@ -181,7 +193,7 @@
         .fixed-sidebar a {
             text-decoration: none;
             color: white;
-            font-size: 16px;
+            font-size: 26px;
         }
         
         .content-main {
@@ -259,14 +271,17 @@
         </header>
         <div class="fixed-sidebar" id="mobileDrawer">
             <ul>
-                <li><a href="#home" class="st">Home</a></li>
-                <li><a href="about.html" class="st">About</a></li>
-                <!-- <li><a href="events.html" class="st">Events</a></li> -->
-                <li><a href="media.html" class="st">Media</a></li>
-                <li><a href="#contact" class="st">Contact</a></li>
-                <li><a href="blogs.html" class="st">Blogs</a></li>
+                <li><a href="#home" class="st">🏠 Home</a></li>
+                <li><a href="about.html" class="st">📖 About</a></li>
+                <!-- <li><a href="events.html" class="st">📅 Events</a></li> -->
+                <li><a href="media.html" class="st">📹 Media</a></li>
+                <li><a href="#contact" class="st">✉️ Contact</a></li>
+                <li><a href="blogs.html" class="st">✍️ Blogs</a></li>
+
             </ul>
         </div>
+
+
         <main class="content-main">
             <div class="main-content">
                 <div class="image-container">
@@ -275,15 +290,35 @@
                 </div>
                 <div class="text-content">
                     <h2>Founder & CEO</h2>
-                    <p>All In one Hospitality Group</p>
+                    <p><a href="https://allinonehospitality.in/" style="text-decoration: none; color: inherit;" target="_blank">All In one Hospitality Group</a></p>
+                    <p><a href="https://ecoyan.in/" style="text-decoration: none; color: inherit;" target="_blank">Ecoyan Electric Motor Vehicles Pvt Ltd</a></p>
+
                 </div>
+                <div class="text-content2">
+
+                    <!-- <h5 class="mb-28 mt-2">Follow Me</h5> -->
+                    <ul class="social social-bg text-center d-flex">
+                        <li class="mr-2 rotate-hover"><a class="facebook-bg text-center pr-0 text-white d-block transition-3 rotate" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="mr-2 rotate-hover"><a class="twitter-bg text-center pr-0 text-white d-block rotate transition-3" href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li class="mr-2 rotate-hover"><a class="linkedin-bg text-center pr-0 text-white d-block rotate transition-3" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li class="mr-2 rotate-hover"><a class="instagram-bg text-center pr-0 text-white d-block rotate transition-3" href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                    <!-- social -->
+
+
+                </div>
+
+
             </div>
+
 
             <div class="entrepreneur-section">
                 <p id="animated-text" style="color: rgb(0, 0, 0); font-size: 30px; font-weight: bold; font-style: italic;">Entrepreneur | Investor | CEO | Construction | Banking | On Demand Services </p>
+
                 <script>
                     document.addEventListener('DOMContentLoaded', () => {
-                            const words = ["Entrepreneur", "Investor", "CEO", "Construction", "Banking", "On Demand Services"];
+                            const words = ["CEO", "Serial Entrepreneur", "X-Banker", "Construction & Interior Services", "Hospitality", "On Demand Services", "Electric Eehicles", ];
+
                             let currentIndex = 0;
                             const textElement = document.getElementById('animated-text');
 
@@ -307,6 +342,7 @@
                     }
                 </script>
             </div>
+
         </main>
     </section>
     <div class="content">
@@ -933,41 +969,7 @@
                                         </div>
                                         <!-- /title -->
                                     </div>
-                                    <!-- <div class="education-wrapper mr-20 pt-15 mb-50">
-                                        <ul class="education-content">
-                                            <li class="mb-32 d-flex align-items-start rotate-hover">
-                                                <div class="experience-ser-icon theme-bg d-inline-block text-center mt-10 mr-30"><span class="white-text d-inline-block"><span class="d-block rotate flat-family flaticon-graduation-cap"></span></span>
-                                                </div>
 
-                                                <div class="experience-service-text d-inline-block">
-                                                    <h5 class="mb-1">Masters in Computer Science</h5>
-                                                    <h6>New York University <span class="primary-color">( 2012 - 2016)</span></h6>
-                                                    <p class="mb-0">Ludantium totam rem aperia meaque ipsa quae ab illo inven tore veritatis et quasi architecto beatae vitae.</p>
-                                                </div>
-                                            </li>
-                                            <li class="mb-32 d-flex align-items-start rotate-hover">
-                                                <div class="experience-ser-icon theme-bg d-inline-block text-center mt-10 mr-30"><span class="white-text d-inline-block"><span class="d-block rotate flat-family flaticon-graduation-cap"></span></span>
-                                                </div>
-
-                                                <div class="experience-service-text d-inline-block">
-                                                    <h5 class="mb-1">Bachelor in Computer Engineering</h5>
-                                                    <h6>Dhaka University <span class="primary-color">( 2008 - 2011)</span></h6>
-                                                    <p class="mb-0">Ludantium totam rem aperia meaque ipsa quae ab illo inven tore veritatis et quasi architecto beatae vitae.</p>
-                                                </div>
-                                            </li>
-                                            <li class="mb-32 d-flex align-items-start rotate-hover">
-                                                <div class="experience-ser-icon theme-bg d-inline-block text-center mt-10 mr-30"><span class="white-text d-inline-block"><span class="d-block rotate flat-family flaticon-graduation-cap"></span></span>
-                                                </div>
-
-                                                <div class="experience-service-text d-inline-block">
-                                                    <h5 class="mb-1">Diploma in Graphic Design</h5>
-                                                    <h6>Bangla College <span class="primary-color">( 2006 - 2008)</span></h6>
-                                                    <p class="mb-0">Ludantium totam rem aperia meaque ipsa quae ab illo inven tore veritatis et quasi architecto beatae vitae.</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div> -->
-                                    <!-- /education-wrapper -->
                                 </div>
 
                                 <div class="col-xl-5 offset-xl-1 col-lg-6 col-md-12 col-sm-12 col-12">
@@ -997,126 +999,7 @@
                             background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.8099614845938375) 9%, rgba(227, 244, 233, 1) 27%, rgba(103, 238, 150, 1) 74%, rgba(255, 255, 255, 0.773546918767507) 97%);
                         }
                     </style>
-                    <div id="service" class="service-area over-hidden pt-155 pb-140" data-aos="zoom-in" data-aos-duration="1500">
-                        <div class="service-wrapper position-relative">
-                            <div class="container">
-                                <div class="row align-items-start">
-                                    <div class="col-xl-12 col-lg-12  col-md-12  col-sm-12 col-12">
-                                        <div class="title text-center"><span class="theme-color f-700 d-block mb-6">What I Do</span>
-                                            <!-- <h3>What I Do</h3> -->
-                                        </div>
-                                        <!-- /title -->
-                                    </div>
 
-                                </div>
-
-                                <div class="row service-wrapper mt-80">
-                                    <div class="col-xl-6  col-lg-6  col-md-6  col-sm-12 col-12" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
-                                        <div class="single-service shadow-hover transition3 white-bg border-radius12 pl-50 pr-50 pt-65 pb-55 mb-25">
-                                            <div class="row">
-                                                <div class="col-xl-3  col-lg-3  col-md-6  col-sm-4 col-5 text-lg-center">
-                                                    <div class="service-ser-icon d-inline-block text-center position-relative mb-15">
-                                                        <div class="service-small-circle service-circle rounded-circle transition5 secondary-bg d-inline-block position-absolute"></div>
-                                                        <div class="service-large-circle service-circle rounded-circle transition5 secondary-bg d-inline-block position-absolute"></div>
-                                                    </div>
-                                                    <!-- /service-ser-icon -->
-                                                </div>
-
-                                                <div class="col-xl-9  col-lg-9  col-md-12  col-sm-12 col-12">
-                                                    <div class="service-text d-inline-block ml-xl-2">
-                                                        <h4 class="mb-15">Diligent Organizer</h4>
-                                                        <p class="mb-0">Known for meticulously planning and executing complex projects with precision and efficiency.</p>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <!-- /single-service -->
-                                    </div>
-
-                                    <div class="col-xl-6  col-lg-6  col-md-6  col-sm-12 col-12" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1200">
-                                        <div class="single-service shadow-hover transition3 white-bg border-radius12 pl-50 pr-50 pt-65 pb-55 mb-25">
-                                            <div class="row">
-                                                <div class="col-xl-3  col-lg-3  col-md-6  col-sm-4 col-5 text-lg-center">
-                                                    <div class="service-ser-icon d-inline-block text-center position-relative mb-15">
-                                                        <div class="service-small-circle service-circle rounded-circle transition5 secondary-bg d-inline-block position-absolute"></div>
-                                                        <div class="service-large-circle service-circle rounded-circle transition5 secondary-bg d-inline-block position-absolute"></div>
-                                                    </div>
-                                                    <!-- /service-ser-icon -->
-                                                </div>
-
-                                                <div class="col-xl-9  col-lg-9  col-md-12  col-sm-12 col-12">
-                                                    <div class="service-text d-inline-block ml-xl-2">
-                                                        <h4 class="mb-15">Dynamic Strategist</h4>
-                                                        <p class="mb-0">Adept at formulating innovative and adaptable strategies that drive business growth and navigate challenges effectively.</p>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <!-- /single-service -->
-                                    </div>
-                                    <div class="col-xl-6  col-lg-6  col-md-6  col-sm-12 col-12" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="500">
-                                        <div class="single-service shadow-hover transition3 white-bg border-radius12 pl-50 pr-50 pt-65 pb-55 mb-25">
-                                            <div class="row">
-                                                <div class="col-xl-3  col-lg-3  col-md-6  col-sm-4 col-5 text-lg-center">
-                                                    <div class="service-ser-icon d-inline-block text-center position-relative mb-15">
-                                                        <div class="service-small-circle service-circle rounded-circle transition5 secondary-bg d-inline-block position-absolute"></div>
-                                                        <div class="service-large-circle service-circle rounded-circle transition5 secondary-bg d-inline-block position-absolute"></div>
-                                                    </div>
-                                                    <!-- /service-ser-icon -->
-                                                </div>
-
-                                                <div class="col-xl-9  col-lg-9  col-md-12  col-sm-12 col-12">
-                                                    <div class="service-text d-inline-block ml-xl-2">
-                                                        <h4 class="mb-15"> Social Responsibility</h4>
-                                                        <p class="mb-0">In addition to his professional achievements, he volunteers with local non-profits focused on education and healthcare. His efforts include organizing fundraising events and mentoring young individuals.</p>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <!-- /single-service -->
-                                    </div>
-
-                                    <div class="col-xl-6  col-lg-6  col-md-6  col-sm-12 col-12" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1200" data-aos-delay="500">
-                                        <div class="single-service shadow-hover transition3 white-bg border-radius12 pl-50 pr-50 pt-65 pb-55 mb-25">
-                                            <div class="row">
-                                                <div class="col-xl-3  col-lg-3  col-md-6  col-sm-4 col-5 text-lg-center">
-                                                    <div class="service-ser-icon d-inline-block text-center position-relative mb-15">
-                                                        <div class="service-small-circle service-circle rounded-circle transition5 secondary-bg d-inline-block position-absolute"></div>
-                                                        <div class="service-large-circle service-circle rounded-circle transition5 secondary-bg d-inline-block position-absolute"></div>
-                                                    </div>
-                                                    <!-- /service-ser-icon -->
-                                                </div>
-
-                                                <div class="col-xl-9  col-lg-9  col-md-12  col-sm-12 col-12">
-                                                    <div class="service-text d-inline-block ml-xl-2">
-                                                        <h4 class="mb-15">Spiring New Entrepreneurs</h4>
-                                                        <p class="mb-0">He passionately mentors and motivates aspiring entrepreneurs, sharing valuable industry insights and guiding them through their startup ventures.</p>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <!-- /single-service -->
-                                    </div>
-
-
-
-                                </div>
-
-                            </div>
-                            <!-- /container -->
-                            <div class="service-blue-shadow position-absolute left-0 z-index-1"><img src="images/slider/shape/service-blue-shadow.png" alt=""></div>
-                            <!-- /blue-shadow -->
-                            <div class="service-red-shadow position-absolute right-0 z-index-1"><img src="images/slider/shape/service-red-shadow.png" alt=""></div>
-                            <!-- /red-shadow -->
-                            <div class="service-yellow-shadow position-absolute left-0 z-index-1"><img src="images/slider/shape/service-yellow-shadow.png" alt=""></div>
-                            <!-- /yellow-shadow -->
-                        </div>
-                        <!-- /service-wrapper -->
-                    </div>
                     <!-- service-area-end -->
                     <!--======testimonial-area-start===============================================-->
                     <style>
@@ -1129,8 +1012,71 @@
                             background: rgb(255, 255, 255);
                             background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.8099614845938375) 9%, rgba(227, 244, 233, 1) 27%, rgba(103, 238, 150, 1) 74%, rgba(255, 255, 255, 0.773546918767507) 97%);
                         }
+                        
+                        .theme-border-bottom {
+                            border-bottom: 0px solid #c8ccd4;
+                        }
                     </style>
 
+                    <div class="education-area" data-aos="zoom-in" data-aos-duration="1500">
+                        <div class="container">
+                            <div class="row position-relative">
+                                <div class="col-xl-5 offset-xl-1 col-lg-6 col-md-12 col-sm-12 col-12">
+                                    <div class="education-img position-relative text-center" data-aos="fade-left" data-aos-duration="2000"><img class="border-radius12" src="images/education/social.jpg" alt=""></div>
+                                    <!-- /education-img -->
+                                </div>
+                                <div class="col-xl-6 col-lg-6  col-md-12 col-sm-12 col-12">
+                                    <div class="position-relative">
+                                        <div class="title"><span class="theme-color f-700 d-block mb-1 mt--8">Social Responsibility</span>
+                                            <!-- <h3 class="f-700 mb-20">My Education</h3> -->
+                                            <p>In addition to his professional achievements, he volunteers with local non-profits focused on education and healthcare. His efforts include organizing fundraising events and mentoring young individuals.</p>
+
+                                        </div>
+                                        <!-- /title -->
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="skill-shape shape shape-up-down-animation position-absolute"><img src="images/slider/shape/shape2.png" alt=""></div>
+                                <!-- /skill-shape -->
+                            </div>
+
+                            <div class="theme-border-bottom pt-145"></div>
+                        </div>
+                        <!-- /container -->
+                    </div>
+                    <div class="education-area" data-aos="zoom-in" data-aos-duration="1500">
+                        <div class="container">
+                            <div class="row position-relative">
+                                <div class="col-xl-6 col-lg-6  col-md-12 col-sm-12 col-12">
+                                    <div class="position-relative">
+                                        <div class="title"><span class="theme-color f-700 d-block mb-1 mt--8">Spiring New Entrepreneurs</span>
+                                            <!-- <h3 class="f-700 mb-20">My Education</h3> -->
+                                            <p>He passionately mentors and motivates aspiring entrepreneurs, sharing valuable industry insights and guiding them through their startup ventures.
+
+                                            </p>
+
+                                        </div>
+                                        <!-- /title -->
+                                    </div>
+
+                                </div>
+
+                                <div class="col-xl-5 offset-xl-1 col-lg-6 col-md-12 col-sm-12 col-12">
+                                    <div class="education-img position-relative text-center" data-aos="fade-left" data-aos-duration="2000"><img class="border-radius12" src="images/education/pds.jpg" alt=""></div>
+                                    <!-- /education-img -->
+                                </div>
+
+                                <div class="skill-shape shape shape-up-down-animation position-absolute"><img src="images/slider/shape/shape2.png" alt=""></div>
+                                <!-- /skill-shape -->
+                            </div>
+
+                            <div class="theme-border-bottom pt-145"></div>
+                        </div>
+                        <!-- /container -->
+                    </div>
                     <div class="testimonial-area over-hidden" data-aos="zoom-in" data-aos-duration="1500">
                         <div class="container">
                             <div class="testimonial-bg secondary-bg pt-170 pb-170 position-relative">
@@ -1522,7 +1468,13 @@
         </footer>
 
         <!-- back top -->
-        <div id="scroll" class="scrollTop text-right"><a href="#" class="theme-bg white-text text-center d-inline-block mr-10 transition5"><span><i class="fal fa-angle-double-up"></i></span></a></div>
+        <div id="scroll" class="scrollTop text-right">
+            <a href="#" class="theme-bg white-text text-center d-inline-block mr-10 transition5">
+                <span><i class="fal fa-angle-double-up"></i>
+                </span>
+            </a>
+
+        </div>
         <!-- All js here -->
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="js/vendor/jquery-1.12.4.min.js"></script>
